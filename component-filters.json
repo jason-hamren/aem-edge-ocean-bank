@@ -27,7 +27,12 @@
       "title",
       "hero",
       "cards",
-      "columns"
+      "columns",
+      "list",
+      "link",
+      "icons",
+      "heading",
+      "metadata"
     ]
   },
   {
