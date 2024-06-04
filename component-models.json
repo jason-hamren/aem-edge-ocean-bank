@@ -179,9 +179,16 @@
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "jasondiv_text",
         "value": "",
         "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "nishadiv_description",
+        "value": "",
+        "label": "Description",
         "valueType": "string"
       }
     ]
