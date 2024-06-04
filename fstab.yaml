@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p34626-e132771.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xwalk/main/"
+    url: "https://author-p34626-e132771.adobeaemcloud.com/bin/franklin.delivery/jason-hamren/aem-edge-ocean-bank/main/"
     type: "markup"
     suffix: ".html"
