@@ -235,6 +235,28 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "id": "tab",
+        "fields": [
+          {
+            "component": "tab",
+            "label": "Styles",
+            "name": "styles"
+          },
+          {
+            "component": "select",
+            "valueType": "string",
+            "name": "backgroundColor",
+            "label": "Background Color",
+            "value": "#FFFFFF",
+            "options": [
+              {"name":  "Dark Blue", "value":  "#091d2f"},
+              {"name":  "Light BLue", "value":  "#ecf0f4"},
+              {"name":  "White", "value":  "#FFFFFF"}
+            ]
+          }
+        ]
       }
     ]
   }
