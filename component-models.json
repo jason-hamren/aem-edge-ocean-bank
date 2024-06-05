@@ -204,7 +204,7 @@
     ]
   },
   {
-    "id": "flip-card",
+    "id": "flipcard",
     "fields": [
       {
         "component": "reference",
