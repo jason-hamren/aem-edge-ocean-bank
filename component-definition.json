@@ -152,7 +152,7 @@
           }
         },
         {
-          "title": "Flippy Card",
+          "title": "Flip Card",
           "id": "flipcard",
           "plugins": {
             "xwalk": {
