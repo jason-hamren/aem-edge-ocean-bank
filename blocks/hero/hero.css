@@ -69,6 +69,8 @@ main .hero-container {
   line-height: 4.22rem;
   right: 4.722rem;
   text-align: right;
+  font-weight: 300;
+  font-family: var(--heading-font-family);
 }
 
 @media (width <= 767px) {

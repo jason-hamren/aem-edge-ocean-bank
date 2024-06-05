@@ -21,11 +21,12 @@
   --dark-blue: #091d2f;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: AlbraGrotesk-Regular, Albra Grotesk, Helvetica, Arial, sans-serif;
+  --heading-font-family: AlbraSans-Light, Albra Sans, Helvetica, Arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
-  /* body sizes */
+
+  /* body sizes
   --body-font-size-m: 22px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
