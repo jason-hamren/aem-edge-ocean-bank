@@ -15,8 +15,7 @@
       "text",
       "image",
       "button",
-      "title",
-      "flipcard"
+      "title"
     ]
   },
   {
@@ -29,13 +28,19 @@
       "hero",
       "cards",
       "columns",
-      "flipcard"
+      "flipcards"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "flipcards",
+    "components": [
+      "flipcard"
     ]
   }
 ]
