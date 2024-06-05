@@ -237,22 +237,11 @@
         "valueType": "string"
       },
       {
-        "component": "tab",
-        "name": "styles",
-        "label": "Styles",
-        "valueType": "string"
-      },
-      {
-        "component": "select",
-        "valueType": "string",
-        "name": "backgroundColor",
-        "label": "Background Color",
-        "value": "#FFFFFF",
-        "options": [
-          {"name":  "Dark Blue", "value":  "#091d2f"},
-          {"name":  "Light BLue", "value":  "#ecf0f4"},
-          {"name":  "White", "value":  "#FFFFFF"}
-        ]
+        "component": "columns",
+        "name": "columns",
+        "label": "Columns",
+        "value": 1,
+        "valueType": "number"
       }
     ]
   }
