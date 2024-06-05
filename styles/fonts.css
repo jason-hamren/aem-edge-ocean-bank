@@ -26,7 +26,7 @@
 }
 
 @font-face {
-  font-family: 'AlbraSans';
+  font-family: AlbraSans;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  font-family: 'AlbraGrotesk';
+  font-family: AlbraGrotesk;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
