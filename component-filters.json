@@ -36,5 +36,14 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "teaser",
+    "components": [
+      "text",
+      "title",
+      "columns",
+      "image"
+    ]
   }
 ]

@@ -235,13 +235,6 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
-      },
-      {
-        "component": "columns",
-        "name": "columns",
-        "label": "Columns",
-        "value": 1,
-        "valueType": "number"
       }
     ]
   }
