@@ -38,8 +38,13 @@
     ]
   },
   {
+    "id": "teasers",
+    "components": []
+  },
+  {
     "id": "teaser",
     "components": [
+      "column"
     ]
   }
 ]
