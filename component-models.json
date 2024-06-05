@@ -164,23 +164,6 @@
     "id": "hero",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "value": "",
-        "label": "Style",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Fade in Background",
-            "value": "fade-in"
-          },
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
@@ -207,17 +190,47 @@
     "id": "flipcard",
     "fields": [
       {
+        "component": "tab",
+        "label": "Front Side",
+        "name": "tab1"
+      },
+      {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "front_image",
         "label": "Image",
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "front_imageAlt",
+        "label": "Image Alt"
+      },
+      {
         "component": "richtext",
-        "name": "text",
+        "name": "front_text",
         "value": "",
-        "label": "Text",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Back Side",
+        "name": "tab2"
+      },
+      {
+        "component": "richtext",
+        "name": "back_text",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "back_description",
+        "value": "",
+        "label": "Description",
         "valueType": "string"
       }
     ]

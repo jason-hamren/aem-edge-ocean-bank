@@ -28,13 +28,19 @@
       "hero",
       "cards",
       "columns",
-      "flipcard"
+      "flipcards"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "flipcards",
+    "components": [
+      "flipcard"
     ]
   }
 ]
