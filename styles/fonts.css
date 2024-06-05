@@ -34,7 +34,7 @@
 }
 
 @font-face {
-  font-family: AlbraGrotesk_Regular;
+  font-family: 'AlbraGrotesk_Regular';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  font-family: AlbraGrotesk;
+  font-family: 'AlbraGrotesk';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
