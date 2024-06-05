@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: AlbraSans_Light;
+  font-family: 'AlbraSans_Light';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-  font-family: AlbraSans;
+  font-family: 'AlbraSans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
