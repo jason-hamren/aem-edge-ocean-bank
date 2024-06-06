@@ -1,0 +1,58 @@
+.flipcards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-gap: 16px;
+}
+
+.flipcards > ul > li {
+  border: 1px solid var(--dark-color);
+  background-color: var(--background-color);
+}
+
+.flipcard {
+  display: flex;
+  margin: 0 15px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.flipcard .flipcard-content {
+  position: relative;
+  width: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flipcard:hover .flipcard-content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.flipcard img {
+  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.flipcard .flipcard-image,
+.flipcard .flipcard-body {
+  position: absolute;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.flipcard .flipcard-body {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
+}

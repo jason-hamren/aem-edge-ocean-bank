@@ -28,6 +28,7 @@
       "hero",
       "cards",
       "columns",
+      "flipcards"
       "teaser"
     ]
   },
@@ -35,6 +36,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "flipcards",
+    "components": [
+      "flipcard"
     ]
   },
   {
