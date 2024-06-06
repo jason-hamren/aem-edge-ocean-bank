@@ -224,6 +224,7 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
 .section.gold h6 {
   color: #7e6835;
   line-height: 2.111rem;
@@ -231,6 +232,7 @@ main .section.highlight {
   font-size: 1.111rem;
   font-weight: 400;
 }
+
 .section.gold p {
   font-size: 1.111rem;
   font-weight: 400;
