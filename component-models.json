@@ -263,5 +263,24 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "highlight",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "highlighted_text",
+        "label": "Highlighted Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "unhighlighted_text",
+        "label": "UnHighlighted Text",
+        "value": ""
+      }
+    ]
   }
 ]
