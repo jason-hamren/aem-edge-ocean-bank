@@ -1,6 +1,7 @@
 .highlight-wrapper {
     background-color: #091d2f;;
 }
+
 .highlight-wrapper .highlight .highlighted {
     color: var(--gold-color);
 }
