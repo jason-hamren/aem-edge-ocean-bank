@@ -197,13 +197,19 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "frontImage",
+        "name": "front_image",
         "label": "Image",
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "front_imageAlt",
+        "label": "Image Alt"
+      },
+      {
         "component": "richtext",
-        "name": "frontText",
+        "name": "front_text",
         "value": "",
         "label": "Title",
         "valueType": "string"
@@ -215,14 +221,14 @@
       },
       {
         "component": "richtext",
-        "name": "backText",
+        "name": "back_text",
         "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "backDescription",
+        "name": "back_description",
         "value": "",
         "label": "Description",
         "valueType": "string"
@@ -230,14 +236,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "backLink",
+        "name": "back_link",
         "value": "",
         "label": "Link Title"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "backHref",
+        "name": "back_ref",
         "value": "",
         "label": "Link"
       }
