@@ -230,6 +230,7 @@ main .section.dark{
   background-color: var(--dark-color);
   color: var(--background-color);
 }
+
 .section.gold h6 {
   color: #7e6835;
   line-height: 2.111rem;
