@@ -191,7 +191,7 @@
     "fields": [
       {
         "component": "tab",
-        "label": "Tab 1",
+        "label": "Front Side",
         "name": "tab1"
       },
       {
@@ -202,16 +202,37 @@
         "multi": false
       },
       {
+        "component": "richtext",
+        "name": "frontText",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
         "component": "tab",
-        "label": "Tab 2",
+        "label": "Back Side",
         "name": "tab2"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "backText",
         "value": "",
-        "label": "Text",
+        "label": "Title",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
       }
     ]
   }
