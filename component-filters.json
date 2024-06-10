@@ -30,7 +30,8 @@
       "cards",
       "columns",
       "flipcards",
-      "teaser"
+      "teaser",
+      "teaserHighlight"
     ]
   },
   {
