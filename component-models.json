@@ -265,7 +265,7 @@
     ]
   },
   {
-    "id": "teaserhighlight",
+    "id": "highlight",
     "fields": [
       {
         "component": "text",
