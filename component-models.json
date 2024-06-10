@@ -268,14 +268,14 @@
     "id": "highlight",
     "fields": [
       {
-        "component": "text",
+        "component": "richtext",
         "valueType": "string",
         "name": "highlighted_text",
         "label": "Highlighted Text",
         "value": ""
       },
       {
-        "component": "text",
+        "component": "richtext",
         "valueType": "string",
         "name": "unhighlighted_text",
         "label": "UnHighlighted Text",
