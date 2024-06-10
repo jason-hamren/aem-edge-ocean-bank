@@ -197,7 +197,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "frontImage",
         "label": "Image",
         "multi": false
       },
@@ -222,7 +222,7 @@
       },
       {
         "component": "richtext",
-        "name": "description",
+        "name": "backDescription",
         "value": "",
         "label": "Description",
         "valueType": "string"
@@ -230,7 +230,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "href",
+        "name": "backLink",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "backHref",
         "value": "",
         "label": "Link"
       }
