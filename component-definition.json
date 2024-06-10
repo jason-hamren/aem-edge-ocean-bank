@@ -223,7 +223,7 @@
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "TeaserHighlight",
+              "name": "Teaserhighlight",
               "model": "teaserhighlight"
             }
           }
