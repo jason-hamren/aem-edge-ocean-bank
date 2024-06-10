@@ -217,14 +217,14 @@
     },
     {
       "title": "Teaser Highlight",
-      "id": "teaserHighlight",
+      "id": "teaserhighlight",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
               "name": "TeaserHighlight",
-              "model": "teaserHighlight"
+              "model": "teaserhighlight"
             }
           }
         }
