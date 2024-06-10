@@ -51,9 +51,5 @@
     "components": [
       "column"
     ]
-  },
-  {
-    "id": "highlight",
-    "components": []
   }
 ]
