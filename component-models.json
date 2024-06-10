@@ -263,5 +263,24 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "teaserHighlight",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "leftcol_text",
+        "label": "Highlighted Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "rightcol_text",
+        "label": "text",
+        "value": ""
+      }
+    ]
   }
 ]

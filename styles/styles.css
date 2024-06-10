@@ -243,3 +243,7 @@ main .section.dark{
   font-weight: 400;
   line-height: 1.778rem;
 }
+
+.section.blue-gold-highlight span.highlighted {
+  color: var(--gold-color);
+}
