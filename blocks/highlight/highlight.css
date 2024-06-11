@@ -1,11 +1,33 @@
 div.section:has(div.highlight-wrapper) {
-    background-color: #091d2f;
+    background-color: var(--dark-color);
 }
 
 .highlight-wrapper .highlight .highlighted {
     color: var(--gold-color);
 }
 
-.highlight-wrapper p {
+.highlight-wrapper {
     color: white;
+}
+
+.highlight.block {
+    display: grid;
+    font-size: 18px;
+    justify-content: space-between;
+    line-height: 1.778rem;
+    grid-template-columns: minmax(648px, 1fr) minmax(522px, 1fr);
+    gap: 0 6.111rem;
+}
+.highlight-section {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    line-height: 3.667rem;
+    font-size: 3.222rem;
+    margin: 0;
+}
+
+.nohighlight {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 2.222rem;
 }
