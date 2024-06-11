@@ -33,7 +33,7 @@ div.section:has(div.highlight-wrapper) {
     margin-bottom: 2.222rem;
 }
 
-@media (width >= 1280px) {
+@media (width >= 768px) {
     .highlight.block {
         display: block;
         font-family: AlbraGrotesk-Regular, 'Albra Grotesk', Helvetica, Arial, sans-serif;
