@@ -19,13 +19,15 @@
   --dark-color: #091d2f;
   --text-color: #091d2f;
   --gold-color: #7e6835;
+  --dark-blue: #091d2f;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: albragrotesk-regular, albra grotesk, helvetica, arial, sans-serif;
+  --heading-font-family: albrasans-light, albra sans, helvetica, arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
-  /* body sizes */
+
+  /* body sizes
   --body-font-size-m: 22px;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
