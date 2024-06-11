@@ -13,10 +13,10 @@ div.section:has(div.highlight-wrapper) {
 .highlight.block {
     display: grid;
     font-size: 18px;
-    justify-content: space-between;
     line-height: 1.778rem;
-    grid-template-columns: minmax(648px, 1fr) minmax(522px, 1fr);
-    gap: 0 6.111rem;
+    gap: 3.111rem 1.667rem;
+    grid-template-columns: repeat(2, minmax(390px, 1fr));
+    justify-content: space-between;
 }
 
 .highlight-section {
@@ -31,4 +31,27 @@ div.section:has(div.highlight-wrapper) {
     grid-column: 2;
     grid-row: 1;
     margin-bottom: 2.222rem;
+}
+
+@media (width >= 1280px) {
+    .highlight.block {
+        display: block;
+        font-family: AlbraGrotesk-Regular, 'Albra Grotesk', Helvetica, Arial, sans-serif;
+        font-size: .889rem;
+        font-weight: 400;
+        line-height: 1.556rem;
+        max-width: 100%;
+    }
+}
+
+@media (width >= 1280px) {
+    .highlight.block {
+        grid-template-columns: minmax(635px, 1fr) minmax(465px, 1fr);
+    }
+}
+
+@media (width >= 1640px) {
+    .highlight.block {
+        grid-template-columns: minmax(648px, 1fr) minmax(522px, 1fr);
+    }
 }
