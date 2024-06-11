@@ -3,7 +3,7 @@ export default function decorate(block) {
   h.className = 'highlight-section';
   nh.className = 'nohighlight';
 
-  const highlightContainer = block.firstChild();
+  const highlightContainer = block.firstElementChild;
   const span = document.createElement('span');
   span.className = 'highlighted';
   const highlightHeader = highlightContainer.querySelector('h2');
