@@ -18,6 +18,7 @@ div.section:has(div.highlight-wrapper) {
     grid-template-columns: minmax(648px, 1fr) minmax(522px, 1fr);
     gap: 0 6.111rem;
 }
+
 .highlight-section {
     grid-column: 1 / 1;
     grid-row: 1 / span 2;
