@@ -8,6 +8,7 @@ div.section:has(div.highlight-wrapper) {
 
 .highlight-wrapper {
     color: white;
+    max-width: 45rem;
 }
 
 .highlight.block {
@@ -27,13 +28,18 @@ div.section:has(div.highlight-wrapper) {
     margin: 0;
 }
 
-.nohighlight {
-    grid-column: 2;
-    grid-row: 1;
-    margin-bottom: 2.222rem;
+.nohighlight p:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0;
 }
 
-@media (width <= 1200px) {
+.nohighlight p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+@media (width <= 768px) {
     .highlight.block {
         display: block;
         font-family: AlbraGrotesk-Regular, 'Albra Grotesk', Helvetica, Arial, sans-serif;
@@ -44,9 +50,26 @@ div.section:has(div.highlight-wrapper) {
     }
 }
 
+@media (width <= 768px) and (width <= 1024px) {
+    .highlight.block .highlight-section {
+        grid-column: 1 / span 2;
+        line-height: 1.778rem;
+        margin: 0;
+        gap: 2.222rem 1.667rem;
+    }
+
+    .highlight-wrapper {
+        min-width: 36.444rem;
+    }
+}
+
 @media (width >= 1280px) {
     .highlight.block {
         grid-template-columns: minmax(635px, 1fr) minmax(465px, 1fr);
+    }
+
+    .highlight-wrapper {
+        max-width: 78pc;
     }
 }
 
