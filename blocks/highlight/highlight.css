@@ -1,7 +1,11 @@
-.highlight-wrapper {
-    background-color: #091d2f;;
+div.section:has(div.highlight-wrapper) {
+    background-color: #091d2f;
 }
 
 .highlight-wrapper .highlight .highlighted {
     color: var(--gold-color);
+}
+
+.highlight-wrapper p {
+    color: white;
 }
