@@ -48,8 +48,6 @@
   },
   {
     "id": "teaser",
-    "components": [
-      "column"
-    ]
+    "components": []
   }
 ]
