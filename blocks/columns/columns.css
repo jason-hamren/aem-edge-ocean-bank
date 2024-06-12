@@ -41,7 +41,7 @@
   margin: 0;
 }
 
-.col-31-69 img {
+.section.col-31-69 .columns-2-cols > div > div:nth-child(2) img {
   height: 100%;
   width: 100%;
   border-radius: .333rem;
