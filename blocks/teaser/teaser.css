@@ -22,6 +22,10 @@
   align-self: end;
 }
 
+.col2 > div {
+  height: 29.778rem;
+}
+
 .col2 img {
   height: 100%;
   width: 100%;

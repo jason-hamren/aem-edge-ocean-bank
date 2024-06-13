@@ -260,3 +260,20 @@ main .section.dark{
 .section.blue-gold-highlight span.highlighted {
   color: var(--gold-color);
 }
+
+/* disclosures */
+.section.disclosures p {
+  color: #68747d;
+  font-size: .7222rem;
+  line-height: 1.333rem;
+  margin-bottom: 24px;
+}
+
+.section.disclosures a {
+  color: #7e6835;
+  text-decoration: none;
+}
+
+.section.disclosures a:hover {
+  text-decoration: underline;
+}
