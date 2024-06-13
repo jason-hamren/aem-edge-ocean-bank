@@ -1,5 +1,5 @@
 .teaser-container .teaser-wrapper {
-  max-width: 1280px;
+  max-width: 78pc;
 }
 
 .teaser-wrapper > div {
@@ -54,13 +54,37 @@
   }
 
   .teaser-container .col2 {
-    flex: auto;
-    height: 29.778rem;
-    align-self: end;
+    width: 100%;
   }
 
   .teaser-container .col2 > div {
     height: 30rem;
     width: 100%;
+  }
+}
+
+@media (width >= 1640px) {
+  .teaser-container .teaser-wrapper {
+    max-width: 71.111rem;
+  }
+}
+
+@media (width >= 768px) {
+  .teaser-container .teaser-wrapper {
+    max-width: 36.444rem;
+  }
+
+  .teaser-container .col2 > div {
+    height: 23.333rem;
+  }
+}
+
+@media (width <= 767px) {
+  .teaser-container .teaser-wrapper {
+    max-width: 20.778rem;
+  }
+
+  .teaser-container .col2 > div {
+    height: 26.667rem;
   }
 }
