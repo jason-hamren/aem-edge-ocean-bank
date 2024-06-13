@@ -261,7 +261,7 @@ main .section.dark{
   color: var(--gold-color);
 }
 
-/* disclosures */
+
 .section.disclosures p {
   color: #68747d;
   font-size: .7222rem;
@@ -274,16 +274,12 @@ main .section.dark{
   text-decoration: none;
 }
 
-.section.disclosures a:hover {
-  text-decoration: underline;
-}
-
-/* gold href links */
 .section.gold-links a {
   color: var(--gold-color);
   text-decoration: none;
 }
 
-.section.gold-links a:hover {
+.section.gold-links a:hover,
+.section.disclosures a:hover {
   text-decoration: underline;
 }
