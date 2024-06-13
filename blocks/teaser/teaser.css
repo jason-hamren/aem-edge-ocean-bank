@@ -52,7 +52,7 @@
   }
 }
 
-@media (width >= 768px) {
+@media (width >= 768px) and (width <= 1024px) {
   .teaser-container .teaser-wrapper {
     max-width: 36.444rem;
   }
