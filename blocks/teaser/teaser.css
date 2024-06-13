@@ -1,8 +1,13 @@
+.teaser-wrapper {
+  max-width: 1280px;
+}
+
 .teaser-wrapper > div {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 2.778rem;
+  padding-bottom: 18.333rem;
 }
 
 .col1 {
@@ -13,10 +18,10 @@
   font-size: 3.222rem;
   line-height: 3.333rem;
   margin-bottom: 2.778rem;
+  margin-top: 0;
 }
 
 .col2 {
-  width: 69rem;
   flex: auto;
   height: 29.778rem;
   align-self: end;
@@ -24,6 +29,7 @@
 
 .col2 > div {
   height: 29.778rem;
+  width: 45rem;
 }
 
 .col2 img {
