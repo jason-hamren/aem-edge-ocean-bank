@@ -261,6 +261,24 @@
         "name": "unhighlighted_text",
         "label": "UnHighlighted Text",
         "value": ""
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Layout",
+        "description": "Select the layout for the highlight container",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "1 Col Highlight",
+            "value": "1-col-highlight"
+          },
+          {
+            "name": "2 Col Highlight",
+            "value": "2-col-highlight"
+          }
+        ]
       }
     ]
   }

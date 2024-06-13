@@ -1,5 +1,6 @@
 .teaser-container .teaser-wrapper {
   max-width: 78pc;
+  margin: auto;
 }
 
 .teaser-wrapper > div {
@@ -40,6 +41,27 @@
   box-shadow: 0 2.778rem 3.611rem -.833rem;
 }
 
+
+@media (width <= 767px) {
+  .teaser-container .teaser-wrapper {
+    max-width: 20.778rem;
+  }
+
+  .teaser-container .col2 > div {
+    height: 26.667rem;
+  }
+}
+
+@media (width >= 768px) {
+  .teaser-container .teaser-wrapper {
+    max-width: 36.444rem;
+  }
+
+  .teaser-container .col2 > div {
+    height: 23.333rem;
+  }
+}
+
 @media (width <= 1280px) {
   .teaser-container .teaser-wrapper {
     max-width: 45rem;
@@ -66,25 +88,5 @@
 @media (width >= 1640px) {
   .teaser-container .teaser-wrapper {
     max-width: 71.111rem;
-  }
-}
-
-@media (width >= 768px) {
-  .teaser-container .teaser-wrapper {
-    max-width: 36.444rem;
-  }
-
-  .teaser-container .col2 > div {
-    height: 23.333rem;
-  }
-}
-
-@media (width <= 767px) {
-  .teaser-container .teaser-wrapper {
-    max-width: 20.778rem;
-  }
-
-  .teaser-container .col2 > div {
-    height: 26.667rem;
   }
 }
