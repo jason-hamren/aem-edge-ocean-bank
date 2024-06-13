@@ -1,3 +1,35 @@
+.teaser-wrapper > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2.778rem;
+}
+
+.col1 {
+  width: 31.389rem;
+}
+
+.col1 [data-aue-prop='1stcol_title']  {
+  font-size: 3.222rem;
+  line-height: 3.333rem;
+  margin-bottom: 2.778rem;
+}
+
+.col2 {
+  width: 69rem;
+  flex: auto;
+  height: 29.778rem;
+  align-self: end;
+}
+
+.col2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .333rem;
+  box-shadow: 0 2.778rem 3.611rem -.833rem;
+}
+
 
 .section.col-31-69 .columns-2-cols > div {
   display: flex;
@@ -30,6 +62,6 @@
   object-fit: cover;
 }
 
-.section.col-31-69 [data-aue-label='Image'] {
+.section.col-31-69   {
   height: 29.778rem;
 }
