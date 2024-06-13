@@ -283,3 +283,18 @@ main .section.dark{
 .section.disclosures a:hover {
   text-decoration: underline;
 }
+
+/* logo image */
+.section.logo {
+  text-align: center;
+  padding: 25px;
+}
+
+.section.logo p {
+  margin: 0;
+}
+
+.section.logo img {
+  width: 213px;
+  height: auto;
+}
