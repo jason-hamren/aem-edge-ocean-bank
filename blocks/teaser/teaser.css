@@ -52,7 +52,7 @@
     margin-bottom: 1.333rem;
   }
 
-  .teaser-container .col1 [data-aue-label="Text"] {
+  .teaser-container .teaser-wrapper .col1 [data-aue-label="Text"] {
     display: block;
     font-size: .889rem;
     line-height: 1.556rem;
