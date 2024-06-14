@@ -215,19 +215,34 @@ main img {
 }
 
 /* sections */
-main .section {
-  padding: 64px 16px;
+.section > div {
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
+@media (width >= 1640px) {
+  .section > div {
+    max-width: 71.111rem;
+    padding: 0;
   }
 }
 
-@media (width >= 900px) {
+@media (width >= 1280px) {
   .section > div {
-    max-width: 1248px;
+    max-width: 78pc;
+    padding: 0 .889rem;
+  }
+}
+
+@media (width >= 768px) and (width <= 1024px) {
+  .section > div {
+    max-width: 36.444rem;
+  }
+}
+
+@media (width <= 768px) {
+  .section > div {
+    max-width: 20.778rem;
     margin: auto;
   }
 }
