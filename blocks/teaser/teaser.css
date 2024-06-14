@@ -41,14 +41,25 @@
   box-shadow: 0 2.778rem 3.611rem -.833rem;
 }
 
-
 @media (width <= 767px) {
   .teaser-container .teaser-wrapper {
     max-width: 20.778rem;
   }
 
+  .teaser-container  .col1 [data-aue-prop='1stcol_title']  {
+    font-size: 2rem;
+    line-height: 2.333rem;
+    margin-bottom: 1.333rem;
+  }
+
+  .teaser-container .col1 [data-aue-label="Text"] p {
+    max-width: 100%;
+  }
+
   .teaser-container .col2 > div {
-    height: 26.667rem;
+    display: block;
+    font-size: .889rem;
+    line-height: 1.556rem;
   }
 }
 
