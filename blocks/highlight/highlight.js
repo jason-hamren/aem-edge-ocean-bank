@@ -7,10 +7,11 @@ export default function decorate(block) {
   const span = document.createElement('span');
   span.className = 'highlighted';
   const highlightHeader = highlightContainer.querySelector('h2');
-  const headerText = highlightHeader.innerHTML;
-  const headerArray = headerText.split(' ');
-  const highlightedText = headerArray.slice(0, 2).join(' ');
-  span.innerHTML = highlightedText;
-  highlightHeader.innerHTML = ` ${headerArray.slice(2).join(' ')}`;
-  highlightHeader.prepend(span);
+  if (highlightHeader) {
+    const headerText = highlightHeader.innerHTML;
+    const headerArray = headerText.split(' ');
+    span.innerHTML = headerArray.slice(0, 2).join(' ');
+    highlightHeader.innerHTML = ` ${headerArray.slice(2).join(' ')}`;
+    highlightHeader.prepend(span);
+  }
 }
