@@ -232,6 +232,20 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "back_link",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "back_ref",
+        "value": "",
+        "label": "Link"
       }
     ]
   }

@@ -14,9 +14,9 @@
   /* colors */
   --link-color: #7e6835;
   --background-color: white;
-  --light-color: #eee;
-  --dark-color: #ccc;
-  --text-color: black;
+  --light-color: #ecf0f4;
+  --dark-color: #091d2f;
+  --text-color: #091d2f;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
