@@ -49,5 +49,11 @@
   {
     "id": "teaser",
     "components": []
+  },
+  {
+    "id": "statictitlecards",
+    "components": [
+      "statictitlecard"
+    ]
   }
 ]
