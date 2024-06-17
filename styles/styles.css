@@ -313,3 +313,22 @@ main .section.dark{
   width: 213px;
   height: auto;
 }
+
+/* section margin */
+.section.m-5 {
+  padding-block: 5.555rem;
+}
+
+/* financial plan title */
+.financial-plan h3 {
+    font-size: 3.222rem;
+    line-height: 3.667rem;
+    max-width: 31.667rem;
+}
+
+@media (width <= 768px) {
+  .financial-plan h3 {
+    font-size: 1.9444rem;
+    line-height: 2.333rem;
+  }
+}

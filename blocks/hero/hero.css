@@ -1,7 +1,3 @@
-main .hero-container > div {
-  max-width: unset;
-}
-
 main .hero-container {
   padding: 0;
 }
@@ -64,7 +60,7 @@ main .hero-container {
 .homepage-hero .caption {
   position: absolute;
   z-index: 2;
-  bottom: 4.38rem;
+  bottom: 6.389rem;
   font-size: 3.889rem;
   line-height: 0;
   right: 4.722rem;
@@ -75,6 +71,10 @@ main .hero-container {
 }
 
 @media (width <= 767px) {
+  .homepage-hero .hero-wrapper {
+    max-width: 20.778rem;
+  }
+
 .homepage-hero .hero {
     height: 33.33rem;
   }
@@ -84,6 +84,18 @@ main .hero-container {
     font-size: 3.22rem;
     line-height: 3.55rem;
     right: 2.22rem;
+  }
+
+  .homepage-hero .hero img {
+    object-position: bottom 0 left 63%;
+  }
+
+  .homepage-hero .caption {
+    bottom: 5.833rem;
+    font-size: 2.778rem;
+    right: .889rem;
+    text-align: right;
+    z-index: 2;
   }
 }
 
@@ -106,9 +118,15 @@ main .hero-container {
   .homepage-hero .hero picture {
     object-position: bottom 0 left 85%;
   }
+
+  .homepage-hero .caption {
+    bottom: 5rem;
+    font-size: 3.222rem;
+    right: 2.222rem;
+  }
 }
 
-@media (width >= 1280px) {
+@media (width >= 1280px) and (width <= 1640px) {
 .homepage-hero .hero {
     height: 41.667rem;
   }
@@ -119,15 +137,31 @@ main .hero-container {
     line-height: 5rem;
     right: 9.72rem;
   }
+
+  .homepage-hero .caption {
+    bottom: 8.333rem;
+    font-size: 4.444rem;
+    right: 9.722rem;
+  }
 }
 
 @media (width >= 1640px) {
-.homepage-hero .hero {
+  .homepage-hero .hero-wrapper {
+    max-width: 104.889rem;
+  }
+
+  .homepage-hero .hero {
     height: 47.778rem;
   }
 
   .homepage-hero .hero h1 {
     bottom: 11.38rem;
     right: 16.94rem;
+  }
+
+  .homepage-hero .caption {
+    bottom: 11.3889rem;
+    right: 16.9444rem;
+    font-size: 4.444rem;
   }
 }
