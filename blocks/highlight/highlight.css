@@ -23,12 +23,7 @@
 .highlight-section {
     grid-column: 1 / span 2;
     line-height: 3.667rem;
-    margin: 0;
-}
-
-.highlight-section h2 {
     font-size: 3.222rem;
-    line-height: 3.333rem;
     margin: 0;
 }
 
@@ -66,7 +61,7 @@
         max-width: 100%;
     }
 
-    .highlight-section h2 {
+    .highlight-section {
         font-size: 1.944rem;
         line-height: 2.333rem;
         margin-bottom: 2.222rem;
@@ -105,9 +100,6 @@
 
     .highlight-section {
         grid-column: 1 / span 2;
-    }
-
-    .highlight-section h2 {
         font-size: 3.222rem;
         line-height: 3.333rem;
     }
@@ -127,9 +119,6 @@
     .highlight-section {
         grid-column: 1 / 1;
         grid-row: 1 / span 2;
-    }
-
-    .highlight-section h2 {
         line-height: 3.667rem;
     }
 

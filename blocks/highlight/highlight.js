@@ -6,7 +6,7 @@ export default function decorate(block) {
   const highlightContainer = block.firstElementChild;
   const span = document.createElement('span');
   span.className = 'highlighted';
-  const highlightHeader = highlightContainer.querySelector('h2');
+  const highlightHeader = highlightContainer.querySelector('p');
   if (highlightHeader) {
     const headerText = highlightHeader.innerHTML;
     const headerArray = headerText.split(' ');
