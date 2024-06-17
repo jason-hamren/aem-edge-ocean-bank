@@ -3,6 +3,10 @@
     color: var(--background-color);
 }
 
+.highlight-container .highlight-wrapper {
+    padding-bottom: 11.111rem;
+}
+
 .highlight-wrapper .highlight .highlighted {
     color: var(--gold-color);
 }

@@ -276,6 +276,9 @@ main .section.dark{
   color: var(--gold-color);
 }
 
+.section.disclosures {
+  margin-bottom: 4.744rem;
+}
 
 .section.disclosures p {
   color: #68747d;
