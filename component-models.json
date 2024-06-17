@@ -208,18 +208,62 @@
     "id": "flipcard",
     "fields": [
       {
+        "component": "tab",
+        "label": "Front Side",
+        "name": "tab1"
+      },
+      {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "front_image",
         "label": "Image",
         "multi": false
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "front_imageAlt",
+        "label": "Image Alt"
+      },
+      {
         "component": "richtext",
-        "name": "text",
+        "name": "front_text",
         "value": "",
-        "label": "Text",
+        "label": "Title",
         "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Back Side",
+        "name": "tab2"
+      },
+      {
+        "component": "richtext",
+        "name": "back_text",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "back_description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "back_link",
+        "value": "",
+        "label": "Link Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "back_ref",
+        "value": "",
+        "label": "Link"
       }
     ]
   },
