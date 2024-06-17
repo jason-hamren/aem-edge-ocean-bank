@@ -227,7 +227,7 @@ main img {
   }
 }
 
-@media (width >= 1280px) {
+@media (width >= 1280px) and (width <= 1640px) {
   .section > div {
     max-width: 78pc;
     padding: 0 .889rem;

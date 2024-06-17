@@ -16,7 +16,7 @@ main .hero-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: var(--background-color);
 }
 
 .hero picture {
@@ -61,24 +61,21 @@ main .hero-container {
   object-position: center center;
 }
 
-.homepage-hero .hero h1 {
+.homepage-hero .caption {
   position: absolute;
   z-index: 2;
-  bottom: 6.38rem;
+  bottom: 4.38rem;
   font-size: 3.889rem;
-  line-height: 4.22rem;
+  line-height: 0;
   right: 4.722rem;
   text-align: right;
   font-weight: 300;
   font-family: var(--heading-font-family);
+  color: var(--background-color);
 }
 
 @media (width <= 767px) {
-  .homepage-hero .hero-wrapper {
-    max-width: 20.778rem;
-  }
-
-  .homepage-hero .hero {
+.homepage-hero .hero {
     height: 33.33rem;
   }
 
@@ -112,11 +109,7 @@ main .hero-container {
 }
 
 @media (width >= 1280px) {
-  .homepage-hero .hero-wrapper {
-    max-width: 71.11rem;
-  }
-
-  .homepage-hero .hero {
+.homepage-hero .hero {
     height: 41.667rem;
   }
 
@@ -129,11 +122,7 @@ main .hero-container {
 }
 
 @media (width >= 1640px) {
-  .homepage-hero .hero-wrapper {
-    max-width: 104.889rem;
-  }
-
-  .homepage-hero .hero {
+.homepage-hero .hero {
     height: 47.778rem;
   }
 

@@ -44,7 +44,7 @@
 .flipcard .flipcard-body {
   position: absolute;
   width: 100%;
-  background: white;
+  background: var(--background-color);
   color: #03446A;
   font-size: 60px;
   border-radius: 5px;
@@ -53,6 +53,6 @@
 
 .flipcard .flipcard-body {
   background: #03446A;
-  color: white;
+  color: var(--background-color);
   transform: rotateY( 180deg );
 }

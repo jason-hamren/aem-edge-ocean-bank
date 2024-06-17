@@ -1,16 +1,10 @@
-div.section:has(div.highlight-wrapper) {
+.section.highlight-container {
     background-color: var(--dark-color);
+    color: var(--background-color);
 }
 
 .highlight-wrapper .highlight .highlighted {
     color: var(--gold-color);
-}
-
-.highlight-container .highlight-wrapper,
-.highlight-container .columns-wrapper {
-    color: white;
-    max-width: 45rem;
-    margin: 0 auto;
 }
 
 .highlight.block {
@@ -61,11 +55,6 @@ div.section:has(div.highlight-wrapper) {
 }
 
 @media (width <= 768px) {
-    .highlight-container .highlight-wrapper,
-    .highlight-container .columns-wrapper {
-        max-width: 20.778rem;
-    }
-
     .highlight.block {
         display: block;
         font-family: AlbraGrotesk-Regular, 'Albra Grotesk', Helvetica, Arial, sans-serif;
@@ -120,11 +109,6 @@ div.section:has(div.highlight-wrapper) {
         line-height: 3.333rem;
     }
 
-    .highlight-container .highlight-wrapper,
-    .highlight-container .columns-wrapper {
-        max-width: 36.444rem;
-    }
-
     .nohighlight p {
         line-height: 1.778rem;
         margin: 0;
@@ -135,12 +119,6 @@ div.section:has(div.highlight-wrapper) {
     .highlight.block {
         grid-template-columns: minmax(635px, 1fr) minmax(465px, 1fr);
         gap: 0 6.111rem;
-    }
-
-    .highlight-container .highlight-wrapper,
-    .highlight-container .columns-wrapper {
-        max-width: 78pc;
-        padding: 0 .889rem;
     }
 
     .highlight-section {
