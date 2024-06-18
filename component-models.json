@@ -344,13 +344,13 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "static_title",
+        "name": "card_title",
         "value": "",
         "label": "Card Title"
       },
       {
         "component": "richtext",
-        "name": "static_text",
+        "name": "card_text",
         "value": "",
         "label": "Card Text",
         "valueType": "string"
