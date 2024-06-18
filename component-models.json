@@ -133,24 +133,6 @@
     "id": "card",
     "fields": [
       {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Styles",
-        "description": "Style class for card component",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": ""
-          },
-          {
-            "name": "Gold Title",
-            "value": "gold-title"
-          }
-        ]
-      },
-      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
