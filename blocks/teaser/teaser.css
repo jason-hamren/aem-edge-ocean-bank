@@ -16,6 +16,10 @@
           margin-bottom: 2.778rem;
           margin-top: 0;
         }
+
+       [data-aue-label="Text"] p {
+          max-width: 21.666rem;
+        }
       }
 
       .col2 {
