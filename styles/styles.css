@@ -17,11 +17,14 @@
   --light-color: #ecf0f4;
   --dark-color: #091d2f;
   --text-color: #091d2f;
+  --gold-color: #7e6835;
+  --dark-blue: #091d2f;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: albragrotesk-regular, albra grotesk, helvetica, arial, sans-serif;
+  --heading-font-family: albrasans-light, albra sans, helvetica, arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -58,8 +61,18 @@
   }
 }
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--body-font-size-s);
+}
+
 body {
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   margin: 0;
   font-family: var(--body-font-family);
   line-height: 1.6;
@@ -192,19 +205,34 @@ main img {
 }
 
 /* sections */
-main .section {
-  padding: 64px 16px;
+.section > div {
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
+@media (width >= 1640px) {
+  .section > div {
+    max-width: 71.111rem;
+    padding: 0;
   }
 }
 
-@media (width >= 900px) {
+@media (width >= 1280px) and (width <= 1640px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 78pc;
+    padding: 0 .889rem;
+  }
+}
+
+@media (width >= 768px) and (width <= 1024px) {
+  .section > div {
+    max-width: 36.444rem;
+  }
+}
+
+@media (width <= 768px) {
+  .section > div {
+    max-width: 20.778rem;
     margin: auto;
   }
 }
@@ -213,4 +241,87 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.dark{
+  background-color: var(--dark-color);
+  color: var(--background-color);
+}
+
+.section.gold h6 {
+  color: #7e6835;
+  line-height: 2.111rem;
+  margin-bottom: 1.333rem;
+  font-size: 1.111rem;
+  font-weight: 400;
+}
+
+.section.gold p {
+  font-size: 1.111rem;
+  font-weight: 400;
+  line-height: 1.778rem;
+}
+
+.section.blue-gold-highlight span.highlighted {
+  color: var(--gold-color);
+}
+
+.section.disclosures {
+  margin-bottom: 4.744rem;
+}
+
+.section.disclosures p {
+  color: #68747d;
+  font-size: .7222rem;
+  line-height: 1.333rem;
+  margin-bottom: 24px;
+}
+
+.section.disclosures a {
+  color: #7e6835;
+  text-decoration: none;
+}
+
+.section.gold-links a {
+  color: var(--gold-color);
+  text-decoration: none;
+}
+
+.section.gold-links a:hover,
+.section.disclosures a:hover {
+  text-decoration: underline;
+}
+
+/* logo image */
+.section.logo {
+  text-align: center;
+  padding: 25px;
+}
+
+.section.logo p {
+  margin: 0;
+}
+
+.section.logo img {
+  width: 213px;
+  height: auto;
+}
+
+/* section margin */
+.section.m-5 {
+  padding-block: 5.555rem;
+}
+
+/* financial plan title */
+.financial-plan h3 {
+    font-size: 3.222rem;
+    line-height: 3.667rem;
+    max-width: 31.667rem;
+}
+
+@media (width <= 768px) {
+  .financial-plan h3 {
+    font-size: 1.9444rem;
+    line-height: 2.333rem;
+  }
 }

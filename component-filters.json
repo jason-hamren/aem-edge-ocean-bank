@@ -15,7 +15,8 @@
       "text",
       "image",
       "button",
-      "title"
+      "title",
+      "cards"
     ]
   },
   {
@@ -28,7 +29,9 @@
       "hero",
       "cards",
       "columns",
-      "flipcards"
+      "flipcards",
+      "teaser",
+      "highlight"
     ]
   },
   {
@@ -42,5 +45,9 @@
     "components": [
       "flipcard"
     ]
+  },
+  {
+    "id": "teaser",
+    "components": []
   }
 ]
