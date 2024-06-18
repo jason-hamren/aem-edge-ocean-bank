@@ -1,95 +1,128 @@
-.teaser-wrapper > div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2.778rem;
-  padding-bottom: 18.333rem;
-}
+.teaser-container {
+  .teaser-wrapper {
+    > div {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2.778rem;
+      padding-bottom: 18.333rem;
 
-.teaser-container  .col1 {
-  width: 31.389rem;
-}
+      .col1 {
+        width: 31.389rem;
 
-.teaser-container  .col1 [data-aue-prop='1stcol_title']  {
-  font-size: 3.222rem;
-  line-height: 3.333rem;
-  margin-bottom: 2.778rem;
-  margin-top: 0;
-}
+        [data-aue-prop='1stcol_title']  {
+          font-size: 3.222rem;
+          line-height: 3.333rem;
+          margin-bottom: 2.778rem;
+          margin-top: 0;
+        }
+      }
 
-.teaser-container .col2 {
-  flex: auto;
-  height: 29.778rem;
-  align-self: end;
-}
+      .col2 {
+        flex: auto;
+        height: 29.778rem;
+        align-self: end;
 
-.teaser-container .col2 > div {
-  height: 29.778rem;
-  width: 45rem;
-}
+        > div {
+          height: 29.778rem;
+          width: 45rem;
 
-.teaser-container .col2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: .333rem;
-  box-shadow: 0 2.778rem 3.611rem -.833rem;
-}
-
-@media (width <= 1280px) {
-  .teaser-wrapper > div {
-    flex-direction: column;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .333rem;
+            box-shadow: 0 2.778rem 3.611rem -.833rem;
+          }
+        }
+      }
+    }
   }
 
-  .teaser-container .col1 {
-    width: 100%;
+  @media (width <= 767px) {
+    .teaser-wrapper {
+      > div {
+        .col1 {
+          width: 100%;
+
+          [data-aue-prop='1stcol_title']  {
+            font-size: 2rem;
+            line-height: 2.333rem;
+            margin-bottom: 1.333rem;
+          }
+
+          [data-aue-label="Text"] {
+            flex-direction: column;
+            font-size: .889rem;
+            line-height: 1.556rem;
+
+              p {
+                max-width: 100%;
+              }
+          }
+        }
+      }
+    }
   }
 
-  .teaser-container .col1 [data-aue-label="Text"] {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    line-height: 1.777rem;
+
+  @media (width >= 768px) and (width <= 1024px) {
+    .teaser-wrapper {
+      > div {
+        .col1 {
+          [data-aue-label="Text"] p {
+            max-width: 17.333rem;
+          }
+        }
+
+        .col2 {
+          > div {
+            height: 23.333rem;
+          }
+        }
+      }
+    }
   }
 
-  .teaser-container .col1 [data-aue-label="Text"] p {
-    max-width: 21.666rem;
+  @media (width <= 1280px) {
+    .teaser-wrapper {
+      > div {
+        flex-direction: column;
+
+        .col1 {
+          width: 100%;
+
+          [data-aue-label="Text"] {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            line-height: 1.777rem;
+          }
+        }
+
+        .col2 {
+          width: 100%;
+
+          > div {
+            height: 30rem;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 
-  .teaser-container .col2 {
-    width: 100%;
-  }
-
-  .teaser-container .col2 > div {
-    height: 30rem;
-    width: 100%;
-  }
-}
-
-@media (width >= 768px) and (width <= 1024px) {
-  .teaser-container .col1 [data-aue-label="Text"] p {
-    max-width: 17.333rem;
-  }
-
-  .teaser-container .col2 > div {
-    height: 23.333rem;
-  }
-}
-
-@media (width <= 767px) {
-  .teaser-container  .col1 [data-aue-prop='1stcol_title']  {
-    font-size: 2rem;
-    line-height: 2.333rem;
-    margin-bottom: 1.333rem;
-  }
-
-  .teaser-container .teaser-wrapper .col1 [data-aue-label="Text"] {
-    display: block;
-    font-size: .889rem;
-    line-height: 1.556rem;
-  }
-
-  .teaser-container .teaser-wrapper .col1 [data-aue-label="Text"] p {
-    max-width: 100%;
+  @media (width > 1280px) {
+      .teaser-wrapper {
+        > div {
+        .col1 {
+          [data-aue-label="Text"] {
+          p {
+            max-width: 21.666rem;
+          }
+         }
+        }
+      }
+    }
   }
 }
