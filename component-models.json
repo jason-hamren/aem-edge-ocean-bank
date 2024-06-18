@@ -318,43 +318,5 @@
         "value": ""
       }
     ]
-  },
-  {
-    "id": "statictitlecards",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "static_title",
-        "value": "",
-        "label": "Static Title"
-      },
-      {
-        "component": "richtext",
-        "name": "static_text",
-        "value": "",
-        "label": "Static Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "statictitlecard",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "card_title",
-        "value": "",
-        "label": "Card Title"
-      },
-      {
-        "component": "richtext",
-        "name": "card_text",
-        "value": "",
-        "label": "Card Text",
-        "valueType": "string"
-      }
-    ]
   }
 ]

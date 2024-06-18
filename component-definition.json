@@ -210,36 +210,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Static Title Cards",
-          "id": "statictitlecards",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "Static Title Cards",
-                  "filter": "statictitlecards"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "Static Title Card",
-          "id": "statictitlecard",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
-                "template": {
-                  "name": "Static Title Card",
-                  "model": "statictitlecard"
-                }
-              }
-            }
-          }
         }
       ]
     }
