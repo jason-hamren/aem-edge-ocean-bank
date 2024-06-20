@@ -3,6 +3,17 @@
 
     .card {
         max-width: 29.167rem;
+
+        p {
+            font-size: 1.111rem;
+            line-height: 1.778rem;
+
+            [data-aue-prop="static_title"] {
+                font-size: 3.222rem;
+                line-height: 3.333rem;
+                margin-bottom: 1.778rem;
+            }
+        }
     }
 
     .card-container {
