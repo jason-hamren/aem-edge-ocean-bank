@@ -7,21 +7,18 @@
     .card {
         max-width: 29.167rem;
         position: relative;
+        font-size: 1.111rem;
+        line-height: 1.778rem;
 
         > div {
             position: sticky;
-            top: 1.3889rem;
+            top: 3.389rem;
             z-index: 1;
 
-            p {
-                font-size: 1.111rem;
-                line-height: 1.778rem;
-
-                [data-aue-prop="static_title"] {
-                    font-size: 3.222rem;
-                    line-height: 3.333rem;
-                    margin-bottom: 1.778rem;
-                }
+            p[data-aue-prop="static_title"] {
+                font-size: 3.222rem;
+                line-height: 3.333rem;
+                margin-bottom: 1.778rem;
             }
         }
     }
