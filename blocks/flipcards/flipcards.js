@@ -32,15 +32,7 @@ function wrapAll(children, wrapper) {
     });
   }
 }
-/**
- * Change Element to new type
- */
-function changeElementType(el, newType) {
-  const newEl = document.createElement(newType);
-  newEl.innerHTML = el.innerHTML;
-  moveInstrumentation(el, newEl);
-  el.parentNode.replaceChild(newEl, el);
-}
+
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
@@ -62,21 +54,9 @@ export default function decorate(block) {
       }
       if (c === 'front') {
         section.append(addActionButton(li, 'plus'));
-        [...section.children].forEach((el) => {
-          if (el.tagName === 'P' && !el.querySelector('picture')) {
-            changeElementType(el, 'h2');
-          } else if (el.dataset.aueProp === 'front_text') {
-            changeElementType(el.children[0], 'h2');
-          }
-        });
       }
       if (c === 'back') {
         section.append(addActionButton(li, 'close'));
-        if (section.children[0].tagName === 'P') {
-          changeElementType(section.children[0], 'h2');
-        } else if (section.children[0].dataset.aueType === 'richtext') {
-          changeElementType(section.children[0].children[0], 'h2');
-        }
         wrapAll(section.children, backCardContent);
       }
     });

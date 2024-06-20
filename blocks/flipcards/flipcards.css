@@ -120,7 +120,7 @@
         margin: auto 0 0;
       }
 
-      [data-aue-prop="back_text"] {
+      [data-aue-prop="back_description"] {
         > h2 {
           margin-bottom: 1.9444rem;
         }

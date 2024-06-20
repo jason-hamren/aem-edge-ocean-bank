@@ -162,8 +162,8 @@
                   "name": "FlipCard",
                   "model": "flipcard",
                   "front_imageAlt": "Sample Alt",
-                  "front_text": "Sample Title",
-                  "back_description": "<h2>Back Title</h2>\n<p>Your Financial Consultant will share recommendations on various types of investment&nbsp;tailored to your specific financial goals and risk tolerance, ensuring you make informed and strategic investment decisions.</p>\n<p><a href=\"https://www.google.com\">Let's Connect</a></p>"
+                  "front_text": "<h2>Front Title</h2>",
+                  "back_description": "<h2>Back Title</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<p><a href=\"https://www.google.com\">Let's Connect</a></p>"
                 }
               }
             }
