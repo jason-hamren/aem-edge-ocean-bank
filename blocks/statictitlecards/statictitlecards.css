@@ -1,3 +1,41 @@
 .statictitlecards {
-    display: block;
+    display: flex;
+
+    .card {
+        max-width: 29.167rem;
+    }
+
+    .card-container {
+        position: relative;
+        max-width: 30.83rem;
+
+        > div {
+            font-size: 1.111rem;
+            line-height: 1.778rem;
+
+            p[data-aue-label="Card Title"] {
+                color: #7e6835;
+                line-height: 2.111rem;
+                margin-bottom: 1.333rem;
+            }
+        }
+
+        &::after {
+             background: linear-gradient(180deg, rgba(236 240 244/ 10%), #ecf0f4 120%);
+             bottom: 0;
+             content: "";
+             display: block;
+             height: 31.944rem;
+             left: 0;
+             position: absolute;
+             width: 100%;
+             z-index: 5;
+         }
+
+         &.hide-mask {
+            &::after {
+                display: none;
+             }
+          }
+    }
 }
