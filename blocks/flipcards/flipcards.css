@@ -163,7 +163,7 @@
     .action-container {
       .action {
         backdrop-filter: blur(30px);
-        background-color: purple;
+        background-color: hsla(41deg 41% 57% / 85%);
         border-radius: 50%;
         padding: .7222rem;
       }
