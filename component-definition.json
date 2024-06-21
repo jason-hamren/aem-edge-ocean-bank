@@ -160,7 +160,10 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "FlipCard",
-                  "model": "flipcard"
+                  "model": "flipcard",
+                  "front_imageAlt": "Sample Alt",
+                  "front_text": "<h2>Front Title</h2>",
+                  "back_description": "<h2>Back Title</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<p><a href=\"https://www.google.com\">Let's Connect</a></p>"
                 }
               }
             }

@@ -120,17 +120,15 @@
         margin: auto 0 0;
       }
 
-      [data-aue-prop="back_text"] {
-        > h2 {
-          margin-bottom: 1.9444rem;
-        }
-      }
-
       [data-aue-prop="back_description"] {
         margin: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
+
+        > h2 {
+          margin-bottom: 1.9444rem;
+        }
       }
     }
 
