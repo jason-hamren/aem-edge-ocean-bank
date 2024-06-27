@@ -1,0 +1,7 @@
+.title2-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.778rem;
+    padding-bottom: 18.333rem;
+}
