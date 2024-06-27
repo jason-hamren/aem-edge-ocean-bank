@@ -3,6 +3,7 @@ export default function decorate(block) {
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
   wrapper.append(...block.children);
+  console.log('This is running');
 
   const baseHtml = `<div class="ofs-flippable-card">
                       <div class="ofs-card-side-front">
