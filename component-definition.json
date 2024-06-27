@@ -210,6 +210,36 @@
               }
             }
           }
+        },
+        {
+          "title": "Teaser2",
+          "id": "teaser2",
+          "plugins": {
+            "walk": {
+              "page": {
+                "resourceType": "mysite/components/teaser",
+                "template": {
+                  "name": "Teaser2",
+                  "model": "teaser2"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Title2",
+          "id": "title2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "mysite/components/title",
+                "template": {
+                  "name": "Teaser2",
+                  "model": "teaser2"
+                }
+              }
+            }
+          }
         }
       ]
     }
