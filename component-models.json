@@ -352,7 +352,7 @@
         "component": "richtext",
         "name": "description",
         "value": "",
-        "label": "Title",
+        "label": "Description",
         "valueType": "string"
       }
     ]
