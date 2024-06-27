@@ -22,5 +22,5 @@ export default function decorate(block) {
                        </div>
                       </div>   
                      </div>`;
-  wrapper.append(baseHtml);
+  wrapper.innerHTML(baseHtml);
 }
