@@ -6,15 +6,15 @@ export default function decorate(block) {
   block.prepend(wrapper);
   wrapper.innerHTML = `<div class="ofs-flippable-card">
                       <div class="ofs-card-side-front">
-                       <h2 class="content-title">${title.firstElementChild.prop('outerHTML')}</h2>
+                       <h2 class="content-title">${title.prop('outerHTML')}</h2>
                        <div class="action-container">
                         <button class="action"> <span class="action-icon"></span></button>
                        </div>
                       </div>   
                       <div class="ofs-card-side-back">
                        <div class="content-description">
-                        <h2 class="content-title">${title.firstElementChild.prop('outerHTML')}</h2>
-                        <p class="content-info">${description.firstElementChild.prop('outerHTML')}</p>
+                        <h2 class="content-title">${title.prop('outerHTML')}</h2>
+                        <p class="content-info">${description.prop('outerHTML')}</p>
                         <a class="action-link" href="https://www.cognitoforms.com/OceanBank2/OceanFinancialServicesContactMe">Let's connect</a>    
                        </div>
                        <div class="action-container">
