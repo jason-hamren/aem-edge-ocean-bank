@@ -4,7 +4,7 @@ export default function decorate(block) {
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
   block.prepend(wrapper);
-  const baseHtml = `<div class="ofs-flippable-card">
+  wrapper.innerHTML = `<div class="ofs-flippable-card">
                       <div class="ofs-card-side-front">
                        <h2 class="content-title">${title.firstElementChild}</h2>
                        <div class="action-container">
@@ -22,5 +22,4 @@ export default function decorate(block) {
                        </div>
                       </div>   
                      </div>`;
-  wrapper.innerHTML(baseHtml);
 }
