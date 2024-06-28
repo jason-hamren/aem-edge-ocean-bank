@@ -56,4 +56,20 @@
              }
           }
     }
+
+    @media (width >= 767px) {
+        flex-direction: column;
+    }
+
+    @media (width >= 768px) and (width <= 1280px) {
+        flex-direction: column;
+
+        .card-container {
+            display: grid;
+            gap: 0 1.778rem;
+            grid-template-columns: repeat(2, minmax(390px, 1fr));
+            grid-template-rows: repeat(3, auto);
+            justify-content: center;
+        }
+    }
 }
