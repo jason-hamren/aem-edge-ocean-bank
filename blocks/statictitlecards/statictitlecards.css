@@ -64,16 +64,6 @@
             max-width: 100%;
             position: relative;
             top: auto;
-        }
-    }
-
-    @media (width >= 768px) and (width <= 1280px) {
-        flex-direction: column;
-
-        .card {
-            max-width: 100%;
-            position: relative;
-            top: auto;
 
             > div {
                 p[data-aue-prop="static_title"] {
@@ -86,11 +76,27 @@
         }
 
         .card-container {
+            &::after {
+                display: none;
+             }
+        }
+    }
+
+    @media (width >= 768px) and (width <= 1280px) {
+        flex-direction: column;
+
+        .card {
+            max-width: 100%;
+            position: relative;
+            top: auto;
+        }
+
+        .card-container {
             display: grid;
             gap: 0 1.778rem;
             grid-template-columns: repeat(2, minmax(390px, 1fr));
             grid-template-rows: repeat(3, auto);
-            justify-content: center;
+            justify-content: flex-start;
 
             > div {
                 :nth-of-type(1) {
@@ -107,6 +113,11 @@
                     grid-column: 2;
                     grid-row: 3;
                 }
+            }
+            .card-container {
+                &::after {
+                     display: none;
+                 }
             }
         }
     }
