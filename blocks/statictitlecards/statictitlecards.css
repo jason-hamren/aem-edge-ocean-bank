@@ -83,6 +83,14 @@
                 display: none;
              }
         }
+
+        &.hide-mask {
+            .card-container {
+                &::after {
+                     display: none;
+                 }
+            }
+        }
     }
 
     @media (width >= 768px) and (width <= 1280px) {
@@ -97,7 +105,7 @@
         .card-container {
             display: grid;
             gap: 0 1.778rem;
-            grid-template-columns: repeat(2, minmax(390px, 1fr));
+            grid-template-columns: repeat(2, minmax(312px, 1fr));
             grid-template-rows: repeat(3, auto);
             justify-content: flex-start;
 
@@ -118,6 +126,14 @@
                 }
             }
 
+            .card-container {
+                &::after {
+                     display: none;
+                 }
+            }
+        }
+
+        &.hide-mask {
             .card-container {
                 &::after {
                      display: none;
