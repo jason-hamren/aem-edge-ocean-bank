@@ -126,10 +126,8 @@
                 }
             }
 
-            .card-container {
-                &::after {
-                     display: none;
-                 }
+            &::after {
+                 display: none;
             }
         }
 
