@@ -324,14 +324,14 @@
       },
       {
         "component": "text",
-        "name": "title",
+        "name": "card_title",
         "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "text",
+        "name": "card_text",
         "value": "",
         "label": "Text",
         "valueType": "string"
