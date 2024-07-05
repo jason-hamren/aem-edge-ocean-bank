@@ -302,7 +302,7 @@
     ]
   },
   {
-    "id": "carouselItem",
+    "id": "carouselitem",
     "fields": [
       {
         "component": "tab",
