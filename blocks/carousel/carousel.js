@@ -18,10 +18,10 @@ export default function decorate(block) {
     const imgContainer = document.createElement('div');
     imgContainer.className = 'img-container';
     carouselItem.classList.add('carousel-item');
-    wrapAll(block.querySelectorAll('picture', imgContainer));
+    wrapAll(carouselItem.querySelector('picture'), imgContainer);
     // add class to content card
     const contentCard = document.createElement('div');
     contentCard.className = 'content-card';
-    wrapAll(block.querySelectorAll("[data-aue-label='Title']"), contentCard);
+    wrapAll(carouselItem.querySelectorAll("[data-aue-label='Title']"), contentCard);
   });
 }
