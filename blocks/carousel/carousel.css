@@ -1,3 +1,6 @@
 .carousel {
-  display: block;
+  .carousel-item {
+    display: flex;
+    flex-direction: row;
+  }
 }
