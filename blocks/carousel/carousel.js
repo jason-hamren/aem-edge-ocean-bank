@@ -2,8 +2,8 @@
  * Wrap an array of items all at once
  */
 function addParentClass(child, className) {
-  if (child && child.length) {
-    child[0].parentNode.classList.add(className);
+  if (child) {
+    child.parentNode.classList.add(className);
   }
 }
 
