@@ -4,9 +4,18 @@ main .carousel-wrapper {
 }
 
 .carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: auto hidden;
+  padding-bottom: 11.111rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: inline mandatory;
+
   .carousel-item {
     display: flex;
     flex-direction: row;
+    gap: .889rem;
+    height: 36.667rem;
 
     .img-container {
       height: 36.667rem;
@@ -14,7 +23,7 @@ main .carousel-wrapper {
 
       img {
         border-radius: .333rem;
-        box-shadow: 0 2.777rem 3.611rem;
+        box-shadow:  11px 0 7rem;
         height: 100%;
         width: 100%;
         object-fit: cover;
