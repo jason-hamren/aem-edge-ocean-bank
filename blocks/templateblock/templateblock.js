@@ -21,6 +21,6 @@ export default function decorate(block) {
       </div>
     </div>
     `;
-  block.prepend(wrapper);
   block.innerHTML = '';
+  block.prepend(wrapper);
 }
