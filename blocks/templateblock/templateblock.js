@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  const [title, description] = [...block.children];
+  const [title, description] = block.children;
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
   wrapper.innerHTML = `
@@ -21,9 +21,9 @@ export default function decorate(block) {
     </div>
     `;
   block.textContent = '';
-  block.append(wrapper);
   const titleLocation = wrapper.querySelector('.content-title');
   const contentDescription = wrapper.querySelector('.content-description');
   titleLocation.append(title.innerHTML);
   contentDescription.append(description.innerHTML);
+  block.append(wrapper);
 }
