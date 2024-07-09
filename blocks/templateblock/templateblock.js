@@ -1,6 +1,6 @@
 export default function decorate(block) {
   const clonedBlock = [...block.children];
-  block.innerHTML = '';
+  block.textContent = '';
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
   wrapper.innerHTML = `
