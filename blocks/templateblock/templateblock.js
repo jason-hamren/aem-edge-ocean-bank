@@ -5,8 +5,7 @@ export default function decorate(block) {
   wrapper.className = 'templateblock-wrapper-custom';
   [...block.children].forEach((item) => {
     moveInstrumentation(item, wrapper);
-    wrapper.append(item);
+    while (item.firstElementChild) wrapper.append(item.firstElementChild);
   });
-  block.textContent = '';
   block.append(wrapper);
 }
