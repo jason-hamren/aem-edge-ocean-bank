@@ -13,7 +13,6 @@ export default function decorate(block) {
       </div>
       <div class="ofs-card-side-back">
         <div class="content-description">
-          ${title.firstElementChild.outerHTML}
           ${description.firstElementChild.outerHTML}
           <a class="action-link" href="https://www.cognitoforms.com/OceanBank2/OceanFinancialServicesContactMe">Let's connect</a>
         </div>
