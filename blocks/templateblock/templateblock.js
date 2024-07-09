@@ -23,6 +23,4 @@ export default function decorate(block) {
       </div>   
     </div>
     `;
-  block.remove(title);
-  block.remove(description);
 }
