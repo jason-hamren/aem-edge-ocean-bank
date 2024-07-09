@@ -1,26 +1,10 @@
+import templateBlockMarkup from '../../scripts/html/markup-templates.js';
+
 export default function decorate(block) {
   const [title, description] = block.children;
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom-jason';
-  wrapper.innerHTML = `
-    <div class="ofs-flippable-card">
-      <div class="ofs-card-side-front">
-        <div class="content-title">${title?.firstElementChild.outerHTML}</div>
-        <div class="action-container">
-          <button class="action"> <span class="action-icon"></span></button>
-        </div>
-      </div>
-      <div class="ofs-card-side-back">
-        <div class="content-description">
-          ${description?.firstElementChild.outerHTML}
-          <a class="action-link" href="https://www.cognitoforms.com/OceanBank2/OceanFinancialServicesContactMe">Let's connect</a>
-        </div>
-        <div class="action-container">
-            <button class="action"><span class="action-icon"></span></button>
-        </div>
-      </div>
-    </div>
-    `;
+  wrapper.innerHTML = templateBlockMarkup(title, description);
   block.textContent = '';
   block.append(wrapper);
 }
