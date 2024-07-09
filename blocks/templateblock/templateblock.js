@@ -1,7 +1,7 @@
 export default function decorate(block) {
   const [title, description] = block.children;
   const wrapper = document.createElement('div');
-  wrapper.className = 'templateblock-wrapper-custom';
+  wrapper.className = 'templateblock-wrapper-custom-jason';
   wrapper.innerHTML = `
     <div class="ofs-flippable-card">
       <div class="ofs-card-side-front">
