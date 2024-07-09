@@ -1,29 +1,27 @@
-import {
-  div, h3, p, a,
-} from '../../scripts/dom-builder.js';
-
 export default function decorate(block) {
-  // const [title, description] = block.children;
+  const [title, description] = block.children;
+  block.innerHTML = '';
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
-  const elem = div(
-    { class: 'card' },
-    a(
-      { href: '#' },
-      div(
-        { class: 'card-thumb' },
-      ),
-      div(
-        { class: 'card-caption' },
-        h3('title'),
-        p({ class: 'card-description' }, 'description'),
-        p(
-          { class: 'button-container' },
-          a({ href: '#', 'aria-label': 'Read More', class: 'button primary' }, 'Read More'),
-        ),
-      ),
-    ),
-  );
-  wrapper.append(elem);
+  wrapper.innerHTML = `
+    <div class="ofs-flippable-card">
+      <div class="ofs-card-side-front">
+        ${title.firstElementChild.outerHTML}
+        <div class="action-container">
+          <button class="action"> <span class="action-icon"></span></button>
+        </div>
+      </div>
+      <div class="ofs-card-side-back">
+        <div class="content-description">
+          ${title.firstElementChild.outerHTML}
+          ${description.firstElementChild.outerHTML}
+          <a class="action-link" href="https://www.cognitoforms.com/OceanBank2/OceanFinancialServicesContactMe">Let's connect</a>
+        </div>
+        <div class="action-container">
+            <button class="action"><span class="action-icon"></span></button>
+        </div>
+      </div>
+    </div>
+    `;
   block.prepend(wrapper);
 }
