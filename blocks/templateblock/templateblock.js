@@ -1,6 +1,5 @@
 export default function decorate(block) {
   const [title, description] = block.children;
-  block.innerHTML = '';
   const wrapper = document.createElement('div');
   wrapper.className = 'templateblock-wrapper-custom';
   wrapper.innerHTML = `
@@ -23,4 +22,5 @@ export default function decorate(block) {
     </div>
     `;
   block.prepend(wrapper);
+  block.innerHTML = '';
 }
