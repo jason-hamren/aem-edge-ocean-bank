@@ -11,6 +11,7 @@ main .carousel-wrapper {
   scroll-behavior: smooth;
   scroll-snap-type: inline mandatory;
   position: relative;
+  gap: .889rem;
 
   .carousel-item {
     display: flex;
@@ -24,7 +25,7 @@ main .carousel-wrapper {
 
         img {
           border-radius: .333rem;
-          box-shadow: 11px 0 7rem;
+          box-shadow: 0 2.778rem 3.611rem -.833rem hsla(209deg 9% 55% / 70%);
           height: 100%;
           width: 100%;
           object-fit: cover;
@@ -83,7 +84,7 @@ main .carousel-wrapper {
          content: '';
          height: 20px;
          width: 20px;
-         display: inline-block;
+         display: block;
          background-size: contain;
      }
 
