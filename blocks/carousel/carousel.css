@@ -78,7 +78,7 @@ main .carousel-wrapper {
 
            &.action-prev::before,
            &.action-next::before {
-              background-image: url(https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg);
+              background-image: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg');
               background-origin: padding-box;
               content: '';
               height: 20px;
