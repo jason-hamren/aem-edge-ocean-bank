@@ -18,11 +18,11 @@ export default function decorate(block) {
   });
 
   const actionContainer = document.createElement('div');
-  actionContainer.className = 'carousel__actions';
+  actionContainer.className = 'carousel-actions';
   const previousAction = document.createElement('button');
-  previousAction.className = 'action__prev';
+  previousAction.className = 'action-prev';
   const nextAction = document.createElement('button');
-  nextAction.className = 'action__next';
+  nextAction.className = 'action-next';
 
   actionContainer.append(previousAction);
   actionContainer.append(nextAction);

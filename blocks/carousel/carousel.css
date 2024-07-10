@@ -53,5 +53,38 @@ main .carousel-wrapper {
         line-height: 1.778rem;
       }
     }
+
+      .carousel-actions {
+        display: inline-flex;
+        gap: .444rem;
+        position: absolute;
+        right: 1.667rem;
+        top: 32rem;
+
+        button {
+          &.action-prev,
+          &.button.action-next {
+            height: 3rem;
+            padding: .944rem;
+            width: 3rem;
+            backdrop-filter: blur(30px);
+            border: none;
+            border-radius: 50%;
+            z-index: 10;
+            display: block;
+            background-color: hsla(41, 41%, 57%, .85);
+          }
+
+           &.action-prev::before,
+           &.action-next::before {
+               background: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg') no-repeat 50%;
+               background-origin: padding-box;
+            }
+
+            &.action-prev {
+               transform: rotate(180deg);
+            }
+        }
+      }
   }
 }
