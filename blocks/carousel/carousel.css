@@ -18,77 +18,77 @@ main .carousel-wrapper {
     gap: .889rem;
     height: 36.667rem;
 
-    .img-container {
-      height: 36.667rem;
-      width: 35.111rem;
+      .img-container {
+        height: 36.667rem;
+        width: 35.111rem;
 
-      img {
+        img {
+          border-radius: .333rem;
+          box-shadow: 11px 0 7rem;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content-card {
+        display: flex;
+        padding: 5.556rem 7.5rem 0 3.333rem;
+        background: #091d2f;
+        color: white;
+        flex-direction: column;
+        align-items: flex-start;
         border-radius: .333rem;
-        box-shadow:  11px 0 7rem;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        height: 36.667rem;
+        width: 35.111rem;
+
+        p[data-aue-label='Title'] {
+          font-size: 2.111rem;
+          line-height: 2.111rem;
+          margin-bottom: 1.667rem;
+          color: #bea265;
+        }
+
+        div[data-aue-label='Text'] p {
+          font-size: 1.111rem;
+          line-height: 1.778rem;
+        }
       }
     }
 
-    .content-card {
-      display: flex;
-      padding: 5.556rem 7.5rem 0 3.333rem;
-      background: #091d2f;
-      color: white;
-      flex-direction: column;
-      align-items: flex-start;
-      border-radius: .333rem;
-      height: 36.667rem;
-      width: 35.111rem;
+  .carousel-actions {
+    display: inline-flex;
+    gap: .444rem;
+    position: absolute;
+    right: 1.667rem;
+    top: 32rem;
 
-      p[data-aue-label='Title'] {
-        font-size: 2.111rem;
-        line-height: 2.111rem;
-        margin-bottom: 1.667rem;
-        color: #bea265;
+      .action-prev,
+      .action-next {
+        height: 3rem;
+        padding: .944rem;
+        width: 3rem;
+        backdrop-filter: blur(30px);
+        border: none;
+        border-radius: 50%;
+        display: block;
+        background-color: gold;
+        position: relative;
       }
 
-      div[data-aue-label='Text'] p {
-        font-size: 1.111rem;
-        line-height: 1.778rem;
-      }
-    }
+      .action-prev::before,
+      .action-next::before {
+         background-image: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg');
+         background-origin: padding-box;
+         content: '';
+         height: 20px;
+         width: 20px;
+         display: inline-block;
+         background-size: contain;
+     }
 
-      .carousel-actions {
-        display: inline-flex;
-        gap: .444rem;
-        position: absolute;
-        right: 1.667rem;
-        top: 32rem;
-
-          .action-prev,
-          .action-next {
-            height: 3rem;
-            padding: .944rem;
-            width: 3rem;
-            backdrop-filter: blur(30px);
-            border: none;
-            border-radius: 50%;
-            display: block;
-            background-color: gold;
-            position: relative;
-          }
-
-          .action-prev::before,
-          .action-next::before {
-             background-image: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg');
-             background-origin: padding-box;
-             content: '';
-             height: 20px;
-             width: 20px;
-             display: inline-block;
-             background-size: contain;
-           }
-
-            .action-prev::before {
-               transform: rotate(180deg);
-            }
+      .action-prev::before {
+         transform: rotate(180deg);
       }
   }
 }
