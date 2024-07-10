@@ -62,9 +62,8 @@ main .carousel-wrapper {
         right: 1.667rem;
         top: 32rem;
 
-        button {
-          &.action-prev,
-          &.action-next {
+          .action-prev,
+          .action-next {
             height: 3rem;
             padding: .944rem;
             width: 3rem;
@@ -72,25 +71,23 @@ main .carousel-wrapper {
             border: none;
             border-radius: 50%;
             display: block;
-            background-color: hsla(41deg 41% 57%/ 85%);
+            background-color: gold;
             position: relative;
           }
 
-           &.action-prev::before,
-           &.action-next::before {
-              background-image: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg');
-              background-origin: padding-box;
-              content: '';
-              height: 20px;
-              width: 20px;
-              display: inline-block;
-              background-size: contain;
-            }
-
-            &.action-prev {
+          .action-prev::before,
+          .action-next::before {
+             background-image: url('https://www.oceanfinancial.com/etc.clientlibs/oceanfinancial/clientlibs/clientlib-site/resources/images/ofs-icon-chevron-right-white.svg');
+             background-origin: padding-box;
+             content: '';
+             height: 20px;
+             width: 20px;
+             display: inline-block;
+             background-size: contain;
+           }
+            .action-prev::before {
                transform: rotate(180deg);
             }
-        }
       }
   }
 }
