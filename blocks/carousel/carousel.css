@@ -72,7 +72,7 @@ main .carousel-wrapper {
         border: none;
         border-radius: 50%;
         display: block;
-        background-color: gold;
+        background-color: hsla(41deg 41% 57%/ 85%);
         position: relative;
       }
 
