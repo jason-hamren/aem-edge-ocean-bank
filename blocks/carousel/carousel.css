@@ -85,6 +85,7 @@ main .carousel-wrapper {
              display: inline-block;
              background-size: contain;
            }
+
             .action-prev::before {
                transform: rotate(180deg);
             }
