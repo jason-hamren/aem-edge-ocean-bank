@@ -1,0 +1,6 @@
+.fact__block-style {
+    color: var(--background-color);
+}
+.fact__block-style h5 {
+    color: gray;
+}
