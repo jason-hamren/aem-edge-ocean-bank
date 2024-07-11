@@ -300,5 +300,18 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "facts",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "fact",
+        "label": "Face",
+        "multi": true,
+        "value": ""
+      }
+    ]
   }
 ]
