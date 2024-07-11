@@ -221,16 +221,9 @@
       },
       {
         "component": "richtext",
-        "name": "back_text",
-        "value": "",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
         "name": "back_description",
         "value": "",
-        "label": "Description",
+        "label": "Title/Description/CTA",
         "valueType": "string"
       },
       {
