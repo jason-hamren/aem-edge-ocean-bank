@@ -295,7 +295,7 @@
     ]
   },
   {
-    "id": "sampleComponent",
+    "id": "samplecomponent",
     "fields": [
       {
         "component": "richtext",
