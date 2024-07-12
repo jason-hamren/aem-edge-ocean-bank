@@ -32,7 +32,8 @@
       "flipcards",
       "teaser",
       "highlight",
-      "statictitlecards"
+      "statictitlecards",
+      "carousel"
     ]
   },
   {
@@ -55,6 +56,12 @@
     "id": "statictitlecards",
     "components": [
       "statictitlecard"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carouselitem"
     ]
   }
 ]
