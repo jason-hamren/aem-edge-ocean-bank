@@ -324,6 +324,27 @@
         "name": "imageAlt",
         "value": "Default alt",
         "label": "Alt Text"
+      },
+      {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageLink",
+          "value": "",
+          "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageTitle",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageDataJason",
+        "value": "",
+        "label": "Jason"
       }
     ]
   }
