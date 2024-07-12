@@ -1,0 +1,142 @@
+.statictitlecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 0;
+
+    .card {
+        max-width: 29.167rem;
+        position: relative;
+        font-size: 1.111rem;
+        line-height: 1.778rem;
+
+        > div {
+            position: sticky;
+            top: 3.389rem;
+            z-index: 1;
+
+            p[data-aue-prop="static_title"] {
+                font-size: 3.222rem;
+                line-height: 3.333rem;
+                margin-bottom: 1.778rem;
+            }
+        }
+    }
+
+    .card-container {
+        position: relative;
+        max-width: 30.83rem;
+
+        > div {
+            font-size: 1.111rem;
+            line-height: 1.778rem;
+
+            p[data-aue-label="Card Title"] {
+                color: #7e6835;
+                line-height: 2.111rem;
+                margin-bottom: 1.333rem;
+            }
+        }
+
+        &::after {
+             background: linear-gradient(180deg, rgba(236 240 244/ 10%), #ecf0f4 120%);
+             bottom: 0;
+             content: "";
+             display: block;
+             height: 31.944rem;
+             left: 0;
+             position: absolute;
+             width: 100%;
+             z-index: 5;
+         }
+
+    }
+
+    &.hide-mask {
+        .card-container {
+            &::after {
+                display: none;
+            }
+        }
+     }
+
+    @media (width <= 767px) {
+        flex-direction: column;
+
+        .card {
+            max-width: 100%;
+            position: relative;
+            top: auto;
+
+            > div {
+                p[data-aue-prop="static_title"] {
+                    font-size: 1.944rem;
+                    font-weight: 300;
+                    line-height: 2.333rem;
+                    margin-bottom: 1.333rem;
+                }
+            }
+        }
+
+        .card-container {
+            &::after {
+                display: none;
+             }
+        }
+
+        &.hide-mask {
+            .card-container {
+                &::after {
+                     display: none;
+                 }
+            }
+        }
+    }
+
+    @media (width >= 768px) and (width <= 1280px) {
+        flex-direction: column;
+
+        .card {
+            max-width: 100%;
+            position: relative;
+            top: auto;
+        }
+
+        .card-container {
+            display: grid;
+            gap: 0 1.778rem;
+            grid-template-columns: repeat(2, minmax(312px, 1fr));
+            grid-template-rows: repeat(3, auto);
+            justify-content: flex-start;
+
+            > div {
+                :nth-of-type(1) {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+
+                :nth-of-type(3) {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+
+                :nth-of-type(5) {
+                    grid-column: 2;
+                    grid-row: 3;
+                }
+            }
+
+            &::after {
+                 display: none;
+            }
+        }
+
+        &.hide-mask {
+            .card-container {
+                &::after {
+                     display: none;
+                 }
+            }
+        }
+    }
+}

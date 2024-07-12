@@ -31,7 +31,8 @@
       "columns",
       "flipcards",
       "teaser",
-      "highlight"
+      "highlight",
+      "statictitlecards"
     ]
   },
   {
@@ -49,5 +50,11 @@
   {
     "id": "teaser",
     "components": []
+  },
+  {
+    "id": "statictitlecards",
+    "components": [
+      "statictitlecard"
+    ]
   }
 ]
