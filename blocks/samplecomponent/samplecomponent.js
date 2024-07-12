@@ -1,10 +1,10 @@
-import templateBlockMarkup from '../../scripts/html/html-templates.js';
+import sampleComponentMarkup from '../../scripts/html/html-templates.js';
 
 export default function decorate(block) {
   const [title, description, cta] = block.children;
   const wrapper = document.createElement('div');
-  wrapper.className = 'templateblock-wrapper-custom';
-  wrapper.innerHTML = templateBlockMarkup(title, description, cta);
+  wrapper.className = 'samplecomponent-wrapper-custom';
+  wrapper.innerHTML = sampleComponentMarkup(title, description, cta);
   // explain all the things
   block.textContent = '';
   block.append(wrapper);
