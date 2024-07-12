@@ -328,23 +328,9 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageText",
-        "value": "",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
         "name": "imageTitle",
         "value": "",
         "label": "Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageDataJason",
-        "value": "",
-        "label": "Jason"
       }
     ]
   }
