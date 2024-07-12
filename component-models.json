@@ -377,6 +377,13 @@
         "name": "background",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jason",
+        "label": "Jason",
+        "multi": false
       }
     ]
   }
