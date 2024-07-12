@@ -1,4 +1,4 @@
-export default function templateBlockMarkup(title, description) {
+export default function templateBlockMarkup(title, description, image) {
   return `
     <div class="teaser">
       <div id="teaser-4dd97e852b" class="cmp-teaser">
@@ -13,8 +13,7 @@ export default function templateBlockMarkup(title, description) {
           </div>
         </div>
         <div class="cmp-teaser__image">
-          <img src="" class="cmp-image__image" itemprop="contentUrl" width="850" height="509" alt="Snowy mountain glacier" title="Snowy mountain glacier">
-          <meta itemprop="caption" content="Snowy mountain glacier">
+          ${image.firstElementChild.outerHTML}
         </div>
       </div>
     </div>
