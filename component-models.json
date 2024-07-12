@@ -328,13 +328,6 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageLink",
-        "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
         "name": "imageText",
         "value": "",
         "label": "Text"
