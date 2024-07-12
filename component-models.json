@@ -350,5 +350,34 @@
         ]
       }
     ]
+  },
+  {
+    "id": "customsection",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "style",
+        "value": "",
+        "label": "Style",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Fade in Background",
+            "value": "fade-in"
+          },
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background",
+        "label": "Image",
+        "multi": false
+      }
+    ]
   }
 ]
