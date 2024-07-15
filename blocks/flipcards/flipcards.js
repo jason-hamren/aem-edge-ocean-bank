@@ -44,6 +44,7 @@ export default function decorate(block) {
     li.className = 'flipcard';
     moveInstrumentation(row, wrapper);
     while (row.firstElementChild) wrapper.append(row.firstElementChild);
+    // 'remove' class is there because the tab in the UE dialog creates an extra div row
     const classes = ['remove', 'front', 'remove', 'back'];
     classes.forEach((c, i) => {
       const section = wrapper.children[i];
