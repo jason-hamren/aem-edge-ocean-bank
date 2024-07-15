@@ -21,9 +21,10 @@ export default function decorate(block) {
 
 const staticcards = document.querySelector('.statictitlecards');
 if (staticcards != null) {
+  const staticcardsTop = staticcards.offsetTop + 50;
   window.addEventListener(
     'scroll',
     () => (
-      document.documentElement.scrollTop >= 3000 ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask')),
+      document.documentElement.scrollTop >= staticcardsTop ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask')),
   );
 }
