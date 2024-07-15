@@ -1,6 +1,7 @@
 main .carousel-wrapper {
   max-width: none;
   overflow: hidden;
+  padding-top: 6.944rem;
 }
 
 .carousel {
