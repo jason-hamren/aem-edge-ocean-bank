@@ -44,20 +44,20 @@ export default function decorate(block) {
     li.className = 'flipcard';
     moveInstrumentation(row, wrapper);
     while (row.firstElementChild) wrapper.append(row.firstElementChild);
-    const classes = ['remove', 'front', 'remove', 'back'];
+    const classes = ['front', 'back'];
     classes.forEach((c, i) => {
       const section = wrapper.children[i];
       const backCardContent = document.createElement('div');
       backCardContent.classList.add('flipcard-back-content');
       if (section && section.hasChildNodes()) {
-        section.classList.add(`flipcard-${c}`);
+        section?.classList.add(`flipcard-${c}`);
       }
       if (c === 'front') {
-        section.append(addActionButton(li, 'plus'));
+        section?.append(addActionButton(li, 'plus'));
       }
       if (c === 'back') {
-        section.append(addActionButton(li, 'close'));
-        wrapAll(section.children, backCardContent);
+        section?.append(addActionButton(li, 'close'));
+        wrapAll(section?.children, backCardContent);
       }
     });
     ul.append(li);
