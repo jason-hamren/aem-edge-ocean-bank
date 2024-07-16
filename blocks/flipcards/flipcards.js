@@ -46,6 +46,11 @@ export default function decorate(block) {
     while (row.firstElementChild) wrapper.append(row.firstElementChild);
     // 'remove' class is there because the tab in the UE dialog creates an extra div row
     const classes = ['remove', 'front', 'remove', 'back'];
+    // <div></div>
+    // <div> Front Section</div>
+    // <div></div>
+    // <div> Back Section</div>
+
     classes.forEach((c, i) => {
       const section = wrapper.children[i];
       const backCardContent = document.createElement('div');
