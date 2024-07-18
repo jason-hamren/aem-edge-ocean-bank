@@ -93,23 +93,25 @@
       > div {
         flex-direction: column;
 
-        .col1 {
-          width: 100%;
-
-          > div {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.1rem;
-            line-height: 1.777rem;
-          }
-        }
-
         .col2 {
-          width: 100%;
+            width: 100%;
 
           > div {
             height: 30rem;
             width: 100%;
+          }
+        }
+
+        .col1 {
+          width: 100%;
+
+          > div {
+            > div {
+              display: flex;
+              justify-content: space-between;
+              font-size: 1.1rem;
+              line-height: 1.777rem;
+            }
           }
         }
       }
