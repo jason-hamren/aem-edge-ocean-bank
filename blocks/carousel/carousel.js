@@ -14,7 +14,7 @@ export default function decorate(block) {
     carouselItem.classList.add('carousel-item');
     addParentClass(carouselItem.querySelector('picture'), 'img-container');
     // add class to content card
-    addParentClass(carouselItem.querySelector("[data-aue-label='Title']"), 'content-card');
+    addParentClass(carouselItem.querySelector('div:nth-child(2)'), 'content-card');
   });
 
   const actionContainer = document.createElement('div');
