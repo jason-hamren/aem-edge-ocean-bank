@@ -49,7 +49,6 @@ header nav {
     list-style: none;
     padding-left: 0;
     font-size: var(--body-font-size-s);
-    font-weight: 500;
   }
 
   .nav-office-info p {
@@ -63,7 +62,7 @@ header nav {
 
   .nav-sections ul {
     line-height: 1.5;
-    font-size: var(--heading-font-size-xl);
+    font-size: var(--heading-font-size-l);
     font-weight: 200;
 
     > li {
@@ -129,6 +128,7 @@ header nav {
         border-radius: 1.5625rem;
         padding: 10px 18px;
         position: relative;
+        width: 90px;
 
         &:hover,
         &:focus{
@@ -399,17 +399,10 @@ header nav .nav-brand img {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-s);
-    font-weight: 500;
 
     > li {
-      font-weight: 700;
-
       > ul {
         margin-top: 0;
-
-        > li {
-          font-weight: 500;
-        }
       }
     }
   }
@@ -438,7 +431,6 @@ header nav .nav-brand img {
     .default-content-wrapper > ul > li {
       flex: 0 1 auto;
       position: relative;
-      font-weight: 500;
 
       > ul {
         display: none;
