@@ -330,8 +330,16 @@ main .section.grey-gradient {
 }
 
 /* section padding */
-main .section.large-padding {
-  padding: 14.833rem 0 17.222rem;
+main .section.lg-bottom-padding {
+  padding-bottom: 17.222rem;
+}
+
+main .section.lg-top-padding {
+  padding-top: 14.833rem;
+}
+
+main .section.md-top-padding {
+  padding-top: 4.722rem;
 }
 
 /* financial plan title */
