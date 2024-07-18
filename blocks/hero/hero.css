@@ -1,7 +1,7 @@
 /* Homepage Hero Styles */
 .homepage-hero.hero-container {
   background-color: var(--dark-blue);
-  padding: 40px 0 5.833rem;
+  padding: 0 0 5.833rem;
 
   .hero-wrapper {
     margin: 0 auto;

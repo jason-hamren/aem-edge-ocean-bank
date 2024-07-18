@@ -78,7 +78,7 @@
   }
 
   .flipcard-front h2 {
-    color: white;
+    color: var(--text-color-on-dark);
     font-size: 28px;
     line-height: 32px;
     margin: 0;
@@ -94,8 +94,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background: white;
-    color: #03446A;
+    background: var(--background-color);
     font-size: 60px;
     border-radius: .6667rem;
     backface-visibility: hidden;
@@ -142,7 +141,7 @@
         align-items: center;
         background: transparent;
         border: 0;
-        color: #fff;
+        color: var(--text-color-on-dark);
         cursor: pointer;
         display: inline-flex;
         justify-content: center;
