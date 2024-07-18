@@ -325,6 +325,10 @@ main .section.lg-top-padding {
   padding-top: 14.833rem;
 }
 
+main .section.md-top-padding {
+  padding-top: 4.722rem;
+}
+
 /* financial plan title */
 .financial-plan h3 {
     font-size: 3.222rem;
