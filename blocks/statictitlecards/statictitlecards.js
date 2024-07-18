@@ -17,14 +17,14 @@ export default function decorate(block) {
   const cardContainer = document.createElement('div');
   cardContainer.className = 'card-container';
   wrapAll(block.querySelectorAll("[data-aue-label='Statictitlecard']"), cardContainer);
-}
 
-const staticcards = document.querySelector('.statictitlecards');
-if (staticcards != null) {
-  const staticcardsTop = staticcards.offsetTop + 50;
-  window.addEventListener(
-    'scroll',
-    () => (
-      document.documentElement.scrollTop >= staticcardsTop ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask')),
-  );
+  const staticcards = document.querySelector('.statictitlecards');
+  if (staticcards != null) {
+    const staticcardsTop = staticcards.offsetTop + 50;
+    window.addEventListener(
+      'scroll',
+      () => (
+        document.documentElement.scrollTop >= staticcardsTop ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask')),
+    );
+  }
 }
