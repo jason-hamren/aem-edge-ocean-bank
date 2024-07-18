@@ -72,9 +72,8 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-feature-settings: "liga" on;
   font-feature-settings: "liga" on;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
 }
 
 html {
