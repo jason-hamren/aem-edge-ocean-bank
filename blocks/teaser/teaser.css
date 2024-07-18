@@ -10,7 +10,7 @@
       .col1 {
         width: 31.389rem;
 
-        div {
+        > div {
             max-width: 21.666rem;
 
           p:nth-child(1) {
@@ -49,7 +49,7 @@
         .col1 {
           width: 100%;
 
-          div {
+          > div {
             flex-direction: column;
             font-size: .889rem;
             line-height: 1.556rem;
@@ -74,7 +74,7 @@
     .teaser-wrapper {
       > div {
         .col1 {
-          [data-aue-label="Text"] p {
+          > div {
             max-width: 17.333rem;
           }
         }
@@ -120,7 +120,7 @@
       .teaser-wrapper {
         > div {
         .col1 {
-          div{
+          > div{
           p {
             max-width: 21.666rem;
           }
