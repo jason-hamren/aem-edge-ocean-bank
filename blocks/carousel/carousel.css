@@ -44,14 +44,15 @@ main .carousel-wrapper {
         height: 36.667rem;
         width: 35.111rem;
 
-        p:nth-child(1) {
+        > p {
           font-size: 2.111rem;
           line-height: 2.111rem;
           margin-bottom: 1.667rem;
           color: #bea265;
         }
 
-        p:nth-child(2) {
+      div[data-aue-label='Text'] p,
+      p:nth-child(2) {
           font-size: 1.111rem;
           line-height: 1.778rem;
         }
