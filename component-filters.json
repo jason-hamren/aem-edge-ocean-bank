@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "customsection"
     ]
   },
   {
@@ -33,7 +34,8 @@
       "teaser",
       "highlight",
       "statictitlecards",
-      "carousel"
+      "carousel",
+      "samplecomponent"
     ]
   },
   {

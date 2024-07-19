@@ -73,6 +73,21 @@
       ]
     },
     {
+      "title": "CustomSection",
+      "id": "customsection",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "name": "CustomSection",
+              "model": "customsection"
+            }
+          }
+        }
+      }
+    },
+    {
       "title": "Blocks",
       "id": "blocks",
       "components": [
@@ -276,6 +291,23 @@
           }
         }
       ]
+    },
+    {
+      "title": "SampleComponent",
+      "id": "samplecomponent",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "SampleComponent",
+              "model": "samplecomponent",
+              "title": "<h2>Sample Component Title</h2>",
+              "description": "<p>Sample Component Description</p>"
+            }
+          }
+        }
+      }
     }
   ]
 }

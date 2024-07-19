@@ -354,5 +354,43 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "samplecomponent",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "customsection",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "jason",
+        "label": "Jason",
+        "multi": false
+      }
+    ]
   }
 ]
