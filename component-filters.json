@@ -39,6 +39,24 @@
     ]
   },
   {
+    "id": "customsection",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "flipcards",
+      "teaser",
+      "highlight",
+      "statictitlecards",
+      "carousel",
+      "samplecomponent"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
