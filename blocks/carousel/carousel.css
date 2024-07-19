@@ -55,6 +55,7 @@ main .carousel-wrapper {
         div[data-aue-label='Text'] p {
           font-size: 1.111rem;
           line-height: 1.778rem;
+          color: white;
         }
       }
     }
