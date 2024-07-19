@@ -10,15 +10,15 @@
       .col1 {
         width: 31.389rem;
 
-        [data-aue-prop='1stcol_title']  {
-          font-size: 3.222rem;
-          line-height: 3.333rem;
-          margin-bottom: 2.778rem;
-          margin-top: 0;
-        }
+        > div {
+            max-width: 21.666rem;
 
-       [data-aue-label="Text"] p {
-          max-width: 21.666rem;
+          > p:nth-child(1) {
+            font-size: 3.222rem;
+            line-height: 3.333rem;
+            margin-bottom: 2.778rem;
+            margin-top: 0;
+          }
         }
       }
 
@@ -49,78 +49,96 @@
         .col1 {
           width: 100%;
 
-          [data-aue-prop='1stcol_title']  {
-            font-size: 2rem;
-            line-height: 2.333rem;
-            margin-bottom: 1.333rem;
-          }
-
-          [data-aue-label="Text"] {
+          > div {
             flex-direction: column;
             font-size: .889rem;
             line-height: 1.556rem;
 
-              p {
-                max-width: 100%;
-              }
+            p {
+              max-width: 100%;
+            }
+
+            > p:nth-child(1) {
+              font-size: 2rem;
+              line-height: 2.333rem;
+              margin-bottom: 1.333rem;
+            }
+
+            > div {
+              flex-direction: column;
+            }
           }
         }
       }
     }
   }
 
+@media (width <= 1280px) {
+  .teaser-wrapper {
+    > div {
+      flex-direction: column;
+
+     .col2 {
+          width: 100%;
+
+        > div {
+          height: 30rem;
+          width: 100%;
+        }
+     }
+
+    .col1 {
+        width: 100%;
+
+      > div {
+        max-width: 100%;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.1rem;
+            line-height: 1.777rem;
+
+            p {
+                max-width: 21.667rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
   @media (width >= 768px) and (width <= 1024px) {
     .teaser-wrapper {
       > div {
-        .col1 {
-          [data-aue-label="Text"] p {
-            max-width: 17.333rem;
-          }
-        }
-
         .col2 {
           > div {
             height: 23.333rem;
           }
         }
-      }
-    }
-  }
-
-  @media (width <= 1280px) {
-    .teaser-wrapper {
-      > div {
-        flex-direction: column;
 
         .col1 {
-          width: 100%;
-
-          [data-aue-label="Text"] {
-            display: flex;
-            justify-content: space-between;
-            font-size: 1.1rem;
-            line-height: 1.777rem;
-          }
-        }
-
-        .col2 {
-          width: 100%;
-
           > div {
-            height: 30rem;
-            width: 100%;
+            max-width: 100%;
+
+            > div {
+              p {
+                max-width: 17.333rem;
+              }
+            }
           }
         }
       }
     }
   }
+
 
   @media (width > 1280px) {
       .teaser-wrapper {
         > div {
         .col1 {
-          [data-aue-label="Text"] {
+          > div{
           p {
             max-width: 21.666rem;
           }
