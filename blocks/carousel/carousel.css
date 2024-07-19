@@ -51,8 +51,8 @@ main .carousel-wrapper {
           color: #bea265;
         }
 
-      div[data-aue-label='Text'] p,
-      p:nth-child(2) {
+        p:nth-child(2),
+        div[data-aue-label='Text'] p {
           font-size: 1.111rem;
           line-height: 1.778rem;
         }
