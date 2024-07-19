@@ -380,17 +380,5 @@
         "multi": false
       }
     ]
-  },
-  {
-    "id": "customsection",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "jason",
-        "label": "Jason",
-        "multi": false
-      }
-    ]
   }
 ]

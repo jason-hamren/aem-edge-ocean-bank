@@ -73,21 +73,6 @@
       ]
     },
     {
-      "title": "CustomSection",
-      "id": "customsection",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/section/v1/section",
-            "template": {
-              "name": "CustomSection",
-              "model": "customsection"
-            }
-          }
-        }
-      }
-    },
-    {
       "title": "Blocks",
       "id": "blocks",
       "components": [
