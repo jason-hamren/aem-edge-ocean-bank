@@ -1,3 +1,7 @@
 .samplecomponent{
     display: block;
 }
+
+.samplecomponent p {
+    color: black;
+}
