@@ -87,8 +87,10 @@
           > div {
             max-width: 100%;
 
-            > div p {
-              max-width: 17.333rem;
+            > div {
+              p {
+                max-width: 17.333rem;
+              }
             }
           }
         }
