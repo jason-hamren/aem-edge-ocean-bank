@@ -54,9 +54,6 @@
             font-size: .889rem;
             line-height: 1.556rem;
 
-            > div {
-              flex-direction: column;
-
             p {
               max-width: 100%;
             }
@@ -67,6 +64,8 @@
               margin-bottom: 1.333rem;
             }
 
+            > div {
+              flex-direction: column;
             }
           }
         }
