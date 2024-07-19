@@ -378,6 +378,34 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "name": "front_text",
+        "value": "",
+        "label": "Front Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "front_text2",
+        "value": "",
+        "label": "Front Text 2",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "back_text",
+        "value": "",
+        "label": "Back Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "back_text2",
+        "value": "",
+        "label": "Back Text 2",
+        "valueType": "string"
       }
     ]
   }
