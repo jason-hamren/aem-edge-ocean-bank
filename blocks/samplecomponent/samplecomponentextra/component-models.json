@@ -1,0 +1,85 @@
+{
+  "id": "samplecomponent",
+  "fields": [
+    {
+      "component": "text",
+      "name": "text",
+      "value": "",
+      "label": "Title",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "front_text",
+      "value": "",
+      "label": "Front Text",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "front_text2",
+      "value": "",
+      "label": "Front Text 2",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "back_text",
+      "value": "",
+      "label": "Back Text",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "back_text2",
+      "value": "",
+      "label": "Back Text 2",
+      "valueType": "string"
+    },
+    {
+      "component": "richtext",
+      "name": "description",
+      "value": "",
+      "label": "Description",
+      "valueType": "string"
+    },
+    {
+      "component": "reference",
+      "valueType": "string",
+      "name": "image",
+      "label": "Image",
+      "multi": false
+    },
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "imageAlt",
+      "value": "Default alt",
+      "label": "Alt Text"
+    },
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "imageTitle",
+      "value": "",
+      "label": "Title"
+    },
+    {
+      "component": "multiselect",
+      "name": "classes",
+      "value": "",
+      "label": "Style",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Style 1",
+          "value": "style1"
+        },
+        {
+          "name": "Style 2",
+          "value": "style2"
+        }
+      ]
+    }
+  ]
+}
