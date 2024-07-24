@@ -1,31 +1,36 @@
-/**
- * Wrap an array of items all at once
- */
-function addParentClass(child, className) {
-  if (child) {
-    child.parentNode.classList.add(className);
-  }
+function createCarouselItem(img, imgAlt, title, text) {
+  return `
+    <div class="carousel-item">
+       <div class="img-container">
+          <picture>
+            <img src="${img}" alt="${imgAlt}">
+          </picture>
+       </div>
+       <div class="content-card">
+          <h2 class="content-title">${title}</h2>
+          <div class="content-text">
+            <p>${text}</p>
+          </div>
+       </div>
+    </div>`;
+}
+
+function createActionContainer() {
+  return `
+    <div class="carousel-actions">
+      <button class="action-prev"></button>
+      <button class="action-next"></button>
+    </div>`;
 }
 
 export default function decorate(block) {
   // add classes
+  const carouselContainer = document.createElement('div');
   [...block.children].forEach((carouselItem) => {
-    // add class to image
-    carouselItem.classList.add('carousel-item');
-    addParentClass(carouselItem.querySelector('picture'), 'img-container');
-    // add class to content card
-    carouselItem.querySelector('div:nth-child(2)')?.classList.add('content-card');
+    // eslint-disable-next-line max-len
+    carouselContainer.append(createCarouselItem(carouselItem.image, carouselItem.imageAlt, carouselItem.card_title, carouselItem.card_text));
   });
 
-  const actionContainer = document.createElement('div');
-  actionContainer.className = 'carousel-actions';
-  const previousAction = document.createElement('button');
-  previousAction.className = 'action-prev';
-  const nextAction = document.createElement('button');
-  nextAction.className = 'action-next';
-
-  actionContainer.append(previousAction);
-  actionContainer.append(nextAction);
-
-  block.append(actionContainer);
+  block.append(carouselContainer);
+  block.append(createActionContainer());
 }
