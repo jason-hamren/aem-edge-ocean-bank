@@ -27,8 +27,9 @@ export default function decorate(block) {
   // add classes
   const carouselContainer = document.createElement('div');
   [...block.children].forEach((carouselItem) => {
+    const [image, imageAlt, cardTitle, cardText] = carouselItem.children;
     // eslint-disable-next-line max-len
-    carouselContainer.append(createCarouselItem(carouselItem.image, carouselItem.imageAlt, carouselItem.card_title, carouselItem.card_text));
+    carouselContainer.append(createCarouselItem(image, imageAlt, cardTitle, cardText));
   });
 
   block.append(carouselContainer);
