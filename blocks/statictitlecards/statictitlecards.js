@@ -1,7 +1,9 @@
 export default function decorate(block) {
+  let isFirst = true;
   [...block.children].forEach((child) => {
-    if (child.firstElementChild) {
+    if (isFirst) {
       child.classList.add('card');
+      isFirst = false;
     } else {
       child.classList.add('card-container');
     }
