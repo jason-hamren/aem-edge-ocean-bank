@@ -1,3 +1,5 @@
+import {parser} from "../../.eslintrc";
+
 function createCarouselItem(imageContent, cardContent) {
   const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
   const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
@@ -36,6 +38,6 @@ export default function decorate(block) {
     carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
   block.textContent = '';
-  block.insertAdjacentHTML('beforeend', JSON.stringify(carouselContainer));
-  block.insertAdjacentHTML('beforend', JSON.stringify(createActionContainer()));
+  block.insertAdjacentHTML('beforeend', carouselContainer.toString());
+  block.insertAdjacentHTML('beforend', createActionContainer());
 }
