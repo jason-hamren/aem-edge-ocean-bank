@@ -32,16 +32,17 @@ function addActionClickEventListeners(block) {
   const carouselActions = block.querySelector('.carousel-actions');
   const prevButton = carouselActions.querySelector('.action-prev');
   const nextButton = carouselActions.querySelector('.action-next');
-  const blockWidth = block.clientWidth;
 
   prevButton.addEventListener('click', (e) => {
     e.preventDefault();
-    block.scrollBy(-blockWidth, 0);
+    const carouselGroup = e.target.parentElement.previousElementSibling;
+    block.scrollBy(-carouselGroup.clientWidth, 0);
   });
 
   nextButton.addEventListener('click', (e) => {
     e.preventDefault();
-    block.scrollBy(blockWidth, 0);
+    const carouselGroup = e.target.parentElement.previousElementSibling;
+    block.scrollBy(carouselGroup, 0);
   });
 }
 
