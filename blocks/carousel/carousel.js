@@ -30,6 +30,7 @@ function createActionContainer() {
 export default function decorate(block) {
   // add classes
   const carouselContainer = document.createElement('div');
+  carouselContainer.className = 'carousel-group';
   [...block.children].forEach((carouselItem) => {
     const [imageContent, cardContent] = carouselItem.children;
     // eslint-disable-next-line max-len
