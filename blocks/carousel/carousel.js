@@ -35,6 +35,6 @@ export default function decorate(block) {
     // eslint-disable-next-line max-len
     carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
-  block.innerHTML = carouselContainer;
-  block.append(createActionContainer());
+  block.appendChild = carouselContainer;
+  // block.append(createActionContainer());
 }
