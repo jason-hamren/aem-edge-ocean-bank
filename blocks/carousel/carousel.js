@@ -33,7 +33,7 @@ export default function decorate(block) {
   [...block.children].forEach((carouselItem) => {
     const [imageContent, cardContent] = carouselItem.children;
     // eslint-disable-next-line max-len
-    carouselContainer.append(createCarouselItem(imageContent, cardContent));
+    carouselContainer.innerHTML = createCarouselItem(imageContent, cardContent);
   });
   block.textContent = '';
   block.innerHTML = carouselContainer;
