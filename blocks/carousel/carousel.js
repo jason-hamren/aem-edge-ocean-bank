@@ -36,6 +36,6 @@ export default function decorate(block) {
     carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
   block.textContent = '';
-  block.insertAdjacentHTML('beforeend', carouselContainer.toString());
+  block.innerHTML =  carouselContainer.toString();
   block.insertAdjacentHTML('beforend', createActionContainer());
 }
