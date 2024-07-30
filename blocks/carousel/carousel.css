@@ -61,8 +61,8 @@ main .carousel-wrapper {
             }
         }
       }
-
-      .carousel-actions {
+  }
+    .carousel-actions {
         display: inline-flex;
         gap: .444rem;
         position: absolute;
@@ -96,6 +96,5 @@ main .carousel-wrapper {
         .action-prev::before {
             transform: rotate(180deg);
         }
-      }
-  }
+    }
 }
