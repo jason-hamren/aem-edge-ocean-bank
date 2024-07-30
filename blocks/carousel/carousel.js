@@ -42,7 +42,7 @@ function addActionClickEventListeners(block) {
   nextButton.addEventListener('click', (e) => {
     e.preventDefault();
     const carouselGroup = e.target.parentElement.previousElementSibling;
-    block.scrollBy(carouselGroup, 0);
+    carouselGroup.scrollBy(carouselGroup.clientWidth, 0);
   });
 }
 
