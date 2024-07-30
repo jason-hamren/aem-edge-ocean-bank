@@ -5,6 +5,8 @@ main .carousel-wrapper {
 }
 
 .carousel {
+  position: relative;
+
   .carousel-group {
     display: flex;
     flex-direction: row;
