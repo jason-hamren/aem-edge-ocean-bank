@@ -62,6 +62,7 @@ main .carousel-wrapper {
         }
       }
   }
+
     .carousel-actions {
         display: inline-flex;
         gap: .444rem;
