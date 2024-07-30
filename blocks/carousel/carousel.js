@@ -1,5 +1,3 @@
-import {parser} from "../../.eslintrc";
-
 function createCarouselItem(imageContent, cardContent) {
   const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
   const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
