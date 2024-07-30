@@ -36,5 +36,5 @@ export default function decorate(block) {
     carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
   block.appendChild = carouselContainer;
-  // block.append(createActionContainer());
+  block.appendChild(createActionContainer());
 }
