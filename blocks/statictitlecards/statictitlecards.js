@@ -12,12 +12,19 @@ function wrapAll(children, wrapper) {
 }
 
 export default function decorate(block) {
-  const [card] = block.children;
-  card.className = 'card';
   const cardContainer = document.createElement('div');
   cardContainer.className = 'card-container';
-  wrapAll(block.querySelectorAll("[data-aue-label='Statictitlecard']"), cardContainer);
+  let isFirst = true;
+  [...block.children].forEach((child) => {
+    if (isFirst) {
+      child.classList.add('card');
+      isFirst = false;
+    } else {
+      child.classList.add('statictitlecard');
+    }
+  });
 
+  wrapAll(block.querySelectorAll('.statictitlecard'), cardContainer);
   const staticcards = document.querySelector('.statictitlecards');
   if (staticcards != null) {
     const staticcardsTop = staticcards.offsetTop + 50;
