@@ -37,5 +37,5 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(carouselContainer);
-  block.append(createActionContainer());
+  block.insertAdjacentHTML('beforeend', createActionContainer());
 }
