@@ -27,6 +27,24 @@ function createActionContainer() {
     </div>`;
 }
 
+// carousel actions click event
+function addActionClickEventListeners(block) {
+  const carouselActions = block.querySelector('.carousel-actions');
+  const prevButton = carouselActions.querySelector('.action-prev');
+  const nextButton = carouselActions.querySelector('.action-next');
+  const blockWidth = block.clientWidth;
+
+  prevButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    block.scrollBy(-blockWidth, 0);
+  });
+
+  nextButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    block.scrollBy(blockWidth, 0);
+  });
+}
+
 export default function decorate(block) {
   // add classes
   const carouselContainer = document.createElement('div');
@@ -39,4 +57,5 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(carouselContainer);
   block.insertAdjacentHTML('beforeend', createActionContainer());
+  addActionClickEventListeners(block);
 }
