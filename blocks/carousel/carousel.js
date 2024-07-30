@@ -19,13 +19,13 @@ function createCarouselItem(imageContent, cardContent) {
     </div>`;
 }
 
-// function createActionContainer() {
-//   return `
-//     <div class="carousel-actions">
-//       <button class="action-prev"></button>
-//       <button class="action-next"></button>
-//     </div>`;
-// }
+function createActionContainer() {
+  return `
+    <div class="carousel-actions">
+      <button class="action-prev"></button>
+      <button class="action-next"></button>
+    </div>`;
+}
 
 export default function decorate(block) {
   // add classes
@@ -33,9 +33,9 @@ export default function decorate(block) {
   [...block.children].forEach((carouselItem) => {
     const [imageContent, cardContent] = carouselItem.children;
     // eslint-disable-next-line max-len
-    carouselContainer.innerHTML = createCarouselItem(imageContent, cardContent);
+    carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
   block.textContent = '';
-  block.innerHTML = carouselContainer;
-  // block.append(createActionContainer());
+  block.insertAdjacentHTML('beforeend', JSON.stringify(carouselContainer));
+  block.insertAdjacentHTML('beforend', JSON.stringify(createActionContainer()));
 }
