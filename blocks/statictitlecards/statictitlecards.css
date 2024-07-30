@@ -32,7 +32,7 @@
                 font-size: 1.111rem;
                 line-height: 1.778rem;
 
-                p:nth-of-type(1) {
+                > p:nth-of-type(1) {
                     color: #7e6835;
                     line-height: 2.111rem;
                     margin-bottom: 1.333rem;
@@ -71,7 +71,7 @@
             top: auto;
 
             > div:nth-of-type(1) {
-                p:nth-of-type(1) {
+                > p:nth-of-type(1) {
                     font-size: 1.944rem;
                     font-weight: 300;
                     line-height: 2.333rem;
