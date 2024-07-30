@@ -87,7 +87,7 @@ main .carousel-wrapper {
 
         .action-prev::before,
         .action-next::before {
-            background-image: url(../../icons/chevron-right-white.svg);
+            background-image: url('../../icons/chevron-right-white.svg');
             background-origin: padding-box;
             content: '';
             height: 20px;
