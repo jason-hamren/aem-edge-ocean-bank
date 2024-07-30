@@ -1,31 +1,62 @@
-/**
- * Wrap an array of items all at once
- */
-function addParentClass(child, className) {
-  if (child) {
-    child.parentNode.classList.add(className);
-  }
+function createCarouselItem(imageContent, cardContent) {
+  const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
+  const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
+  const cardTitle = cardContent && cardContent.querySelector('p').innerText;
+  const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
+  return `
+    <div class="carousel-item">
+       <div class="img-container">
+          <picture>
+            <img src="${imageSrc || ''}" alt="${imgAlt || ''}">
+          </picture>
+       </div>
+       <div class="content-card">
+          <h2 class="content-title">${cardTitle || ''}</h2>
+          <div class="content-text">
+            <p>${cardText || ''}</p>
+          </div>
+       </div>
+    </div>`;
+}
+
+function createActionContainer() {
+  return `
+    <div class="carousel-actions">
+      <button class="action-prev"></button>
+      <button class="action-next"></button>
+    </div>`;
+}
+
+// carousel actions click event
+function addActionClickEventListeners(block) {
+  const carouselActions = block.querySelector('.carousel-actions');
+  const prevButton = carouselActions.querySelector('.action-prev');
+  const nextButton = carouselActions.querySelector('.action-next');
+
+  prevButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const carouselGroup = e.target.parentElement.previousElementSibling;
+    carouselGroup.scrollBy(-carouselGroup.clientWidth, 0);
+  });
+
+  nextButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const carouselGroup = e.target.parentElement.previousElementSibling;
+    carouselGroup.scrollBy(carouselGroup.clientWidth, 0);
+  });
 }
 
 export default function decorate(block) {
   // add classes
+  const carouselContainer = document.createElement('div');
+  carouselContainer.className = 'carousel-group';
   [...block.children].forEach((carouselItem) => {
-    // add class to image
-    carouselItem.classList.add('carousel-item');
-    addParentClass(carouselItem.querySelector('picture'), 'img-container');
-    // add class to content card
-    carouselItem.querySelector('div:nth-child(2)')?.classList.add('content-card');
+    const [imageContent, cardContent] = carouselItem.children;
+    // eslint-disable-next-line max-len
+    carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
   });
-
-  const actionContainer = document.createElement('div');
-  actionContainer.className = 'carousel-actions';
-  const previousAction = document.createElement('button');
-  previousAction.className = 'action-prev';
-  const nextAction = document.createElement('button');
-  nextAction.className = 'action-next';
-
-  actionContainer.append(previousAction);
-  actionContainer.append(nextAction);
-
-  block.append(actionContainer);
+  block.textContent = '';
+  block.append(carouselContainer);
+  block.insertAdjacentHTML('beforeend', createActionContainer());
+  addActionClickEventListeners(block);
 }
