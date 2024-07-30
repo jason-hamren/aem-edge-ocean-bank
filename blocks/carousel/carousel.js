@@ -1,8 +1,8 @@
 function createCarouselItem(imageContent, cardContent) {
   const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
   const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
-  const cardTitle = cardContent && cardContent.querySelector('p:nth-of-type(1)')?.innerText;
-  const cardText = cardContent && cardContent.querySelector('p:nth-of-type(2)')?.innerText;
+  const cardTitle = cardContent && cardContent.querySelectorAll('p:nth-of-type(1)')?.innerText;
+  const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
   return `
     <div class="carousel-item">
        <div class="img-container">
