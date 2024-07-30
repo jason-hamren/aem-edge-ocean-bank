@@ -19,13 +19,13 @@ function createCarouselItem(imageContent, cardContent) {
     </div>`;
 }
 
-function createActionContainer() {
-  return `
-    <div class="carousel-actions">
-      <button class="action-prev"></button>
-      <button class="action-next"></button>
-    </div>`;
-}
+// function createActionContainer() {
+//   return `
+//     <div class="carousel-actions">
+//       <button class="action-prev"></button>
+//       <button class="action-next"></button>
+//     </div>`;
+// }
 
 export default function decorate(block) {
   // add classes
@@ -36,6 +36,6 @@ export default function decorate(block) {
     carouselContainer.append(createCarouselItem(imageContent, cardContent));
   });
   block.textContent = '';
-  block.insertAdjacentHTML('beforeend', carouselContainer);
-  block.insertAdjacentHTML('beforend', createActionContainer());
+  block.innerHTML = carouselContainer;
+  // block.append(createActionContainer());
 }
