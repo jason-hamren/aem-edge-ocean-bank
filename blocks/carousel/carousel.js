@@ -36,7 +36,7 @@ function addActionClickEventListeners(block) {
   prevButton.addEventListener('click', (e) => {
     e.preventDefault();
     const carouselGroup = e.target.parentElement.previousElementSibling;
-    block.scrollBy(-carouselGroup.clientWidth, 0);
+    carouselGroup.scrollBy(-carouselGroup.clientWidth, 0);
   });
 
   nextButton.addEventListener('click', (e) => {
