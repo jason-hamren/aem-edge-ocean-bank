@@ -10,12 +10,12 @@
         font-size: 1.111rem;
         line-height: 1.778rem;
 
-        > div {
+        > div:nth-of-type(1) {
             position: sticky;
             top: 3.389rem;
             z-index: 1;
 
-            p:nth-of-type(1) {
+            > p:nth-of-type(1) {
                 font-size: 3.222rem;
                 line-height: 3.333rem;
                 margin-bottom: 1.778rem;
@@ -28,11 +28,11 @@
         max-width: 30.83rem;
 
         .statictitlecard {
-            > div {
+            > div:nth-of-type(1) {
                 font-size: 1.111rem;
                 line-height: 1.778rem;
 
-                p:nth-of-type(1) {
+                > p:nth-of-type(1) {
                     color: #7e6835;
                     line-height: 2.111rem;
                     margin-bottom: 1.333rem;
@@ -70,8 +70,8 @@
             position: relative;
             top: auto;
 
-            > div {
-                p:nth-of-type(1) {
+            > div:nth-of-type(1) {
+                > p:nth-of-type(1) {
                     font-size: 1.944rem;
                     font-weight: 300;
                     line-height: 2.333rem;

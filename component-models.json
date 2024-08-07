@@ -225,20 +225,6 @@
         "value": "",
         "label": "Title/Description/CTA",
         "valueType": "string"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "back_link",
-        "value": "",
-        "label": "Link Title"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "back_ref",
-        "value": "",
-        "label": "Link"
       }
     ]
   },
@@ -329,6 +315,69 @@
         "value": "",
         "label": "Card Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "carouselitem",
+    "fields": [
+      {
+        "component": "tab",
+        "label": "Carousel Item",
+        "name": "tab1"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt"
+      },
+      {
+        "component": "text",
+        "name": "card_title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "card_text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "samplecomponent",
+    "fields": [
+      {
+        "component": "text",
+        "name": "text",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
       }
     ]
   }

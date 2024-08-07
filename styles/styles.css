@@ -14,15 +14,19 @@
   /* colors */
   --link-color: #7e6835;
   --background-color: white;
+  --background-color-hover: #eff0f1;
   --light-color: #ecf0f4;
   --dark-color: #091d2f;
   --text-color: #091d2f;
+  --text-color-on-dark: white;
   --gold-color: #7e6835;
+  --gold-color-light: #bea265;
   --dark-blue: #091d2f;
+  --background-color-dark: var(--dark-blue);
 
   /* fonts */
-  --body-font-family: albragrotesk-regular, albra grotesk, helvetica, arial, sans-serif;
-  --heading-font-family: albrasans-light, albra sans, helvetica, arial, sans-serif;
+  --body-font-family: 'albragrotesk_regular', albragrotesk, helvetica, arial, sans-serif;
+  --heading-font-family: 'albrasans_light', albrasans, helvetica, arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
 
@@ -33,14 +37,15 @@
 
   /* heading sizes */
   --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
+  --heading-font-size-xl: 45px;
+  --heading-font-size-l: 36px;
   --heading-font-size-m: 24px;
   --heading-font-size-s: 20px;
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height-mobile: 80px;
+  --nav-height: 100px;
 }
 
 @font-face {
@@ -65,6 +70,10 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" on;
+  text-rendering: optimizelegibility;
 }
 
 html {
@@ -86,7 +95,13 @@ body.appear {
 }
 
 header {
-  height: var(--nav-height);
+  height: var(--nav-height-mobile);
+}
+
+@media (width >= 1024px) {
+  header {
+    height: var(--nav-height);
+  }
 }
 
 h1,
@@ -98,7 +113,7 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: 600;
   line-height: 1.25;
-  margin-top: 1em;
+  margin-top: 0;
   margin-bottom: 0.5em;
   scroll-margin: calc(var(--nav-height) + 1em);
 }
@@ -146,13 +161,14 @@ main pre {
 a:any-link {
   color: var(--link-color);
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  text-decoration: none;
   transition: .2s;
 }
 
 a:hover {
+  color: var(--gold-color);
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /* buttons */
@@ -168,6 +184,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
+  color: var(--gold-color);
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -248,6 +265,10 @@ main .section.dark{
   color: var(--background-color);
 }
 
+main .section.grey-gradient {
+  background: transparent linear-gradient(180deg, #fff, #ecf0f4 60% 100%);
+}
+
 .section.gold h6 {
   color: #7e6835;
   line-height: 2.111rem;
@@ -310,6 +331,19 @@ main .section.dark{
 /* section margin */
 .section.m-5 {
   padding-block: 5.555rem;
+}
+
+/* section padding */
+main .section.lg-bottom-padding {
+  padding-bottom: 17.222rem;
+}
+
+main .section.lg-top-padding {
+  padding-top: 14.833rem;
+}
+
+main .section.md-top-padding {
+  padding-top: 4.722rem;
 }
 
 /* financial plan title */
