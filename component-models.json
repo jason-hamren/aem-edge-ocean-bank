@@ -340,7 +340,7 @@
         "label": "Image Alt"
       },
       {
-        "component": "text",
+        "component": "richtext",
         "name": "card_title",
         "value": "",
         "label": "Title",

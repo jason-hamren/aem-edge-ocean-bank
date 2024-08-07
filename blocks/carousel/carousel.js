@@ -1,20 +1,13 @@
 function createCarouselItem(imageContent, cardContent) {
-  const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
-  const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
-  const cardTitle = cardContent && cardContent.querySelector('p').innerText;
-  const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
+  imageContent.classList.add('img-container');
+  // const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
+  // const cardTitle = cardContent && cardContent.querySelector('p').innerText;
+  // const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
   return `
     <div class="carousel-item">
-       <div class="img-container">
-          <picture>
-            <img src="${imageSrc || ''}" alt="${imgAlt || ''}">
-          </picture>
-       </div>
+       ${imageContent}
        <div class="content-card">
-          <h2 class="content-title">${cardTitle || ''}</h2>
-          <div class="content-text">
-            <p>${cardText || ''}</p>
-          </div>
+          ${cardContent}
        </div>
     </div>`;
 }

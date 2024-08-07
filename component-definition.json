@@ -269,7 +269,8 @@
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "CarouselItem",
-                  "model": "carouselitem"
+                  "model": "carouselitem",
+                  "title": "<h2>Sample Component Title</h2>"
                 }
               }
             }
