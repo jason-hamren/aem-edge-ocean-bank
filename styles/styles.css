@@ -23,6 +23,7 @@
   --gold-color-light: #bea265;
   --dark-blue: #091d2f;
   --background-color-dark: var(--dark-blue);
+  --grey-color: #838e98;
 
   /* fonts */
   --body-font-family: 'albragrotesk_regular', albragrotesk, helvetica, arial, sans-serif;
