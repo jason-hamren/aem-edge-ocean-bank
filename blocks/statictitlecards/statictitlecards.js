@@ -27,11 +27,13 @@ export default function decorate(block) {
   wrapAll(block.querySelectorAll('.statictitlecard'), cardContainer);
   const staticcards = document.querySelector('.statictitlecards');
   if (staticcards != null) {
-    const staticcardsTop = staticcards.offsetTop + 50;
     window.addEventListener(
       'scroll',
-      () => (
-        document.documentElement.scrollTop >= staticcardsTop ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask')),
+      () => {
+        const staticcardsTop = staticcards.offsetTop + 50;
+        // eslint-disable-next-line no-unused-expressions
+        document.documentElement.scrollTop >= staticcardsTop ? staticcards.classList.add('hide-mask') : staticcards.classList.remove('hide-mask');
+      },
     );
   }
 }
