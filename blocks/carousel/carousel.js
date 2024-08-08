@@ -1,15 +1,15 @@
 /**
  * Wrap an array of items all at once
  */
-function wrapAll(children, wrapper) {
-  if (children && children.length) {
-    children[0].parentNode.insertBefore(wrapper, children[0]);
-    [...children].forEach((child) => {
-      if (child === wrapper) return;
-      wrapper.appendChild(child);
-    });
-  }
-}
+// function wrapAll(children, wrapper) {
+//   if (children && children.length) {
+//     children[0].parentNode.insertBefore(wrapper, children[0]);
+//     [...children].forEach((child) => {
+//       if (child === wrapper) return;
+//       wrapper.appendChild(child);
+//     });
+//   }
+// }
 
 // function createCarouselItem(imageContent, cardContent) {
 //   imageContent.classList.add('img-container');
