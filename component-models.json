@@ -342,14 +342,14 @@
       {
         "component": "richtext",
         "name": "card_title",
-        "value": "<h2>Sample Component Title</h2>",
+        "value": "",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "card_text",
-        "value": "<p>Carousel item text goes here.</p>",
+        "value": "",
         "label": "Text",
         "valueType": "string"
       }

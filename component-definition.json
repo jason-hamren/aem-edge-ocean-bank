@@ -270,8 +270,9 @@
                 "template": {
                   "name": "CarouselItem",
                   "model": "carouselitem",
+                  "imageAlt": "Sample Alt",
                   "card_title": "<h2>Sample Component Title</h2>",
-                  "text": "<p>Carousel item text goes here.</p>"
+                  "card_text": "<p>Carousel item text goes here.</p>"
                 }
               }
             }
