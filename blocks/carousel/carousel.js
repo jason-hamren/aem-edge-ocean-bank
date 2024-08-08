@@ -60,8 +60,9 @@ export default function decorate(block) {
     const [imageContent, cardContent] = carouselItem.children;
     // eslint-disable-next-line max-len
     // carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
-    wrapAll(imageContent, carouselContainer);
-    wrapAll(cardContent, carouselContainer);
+    imageContent.classList.add('img-class');
+    cardContent.classList.add('card-content');
+    carouselContainer.append(carouselItem);
   });
   block.textContent = '';
   block.append(carouselContainer);
