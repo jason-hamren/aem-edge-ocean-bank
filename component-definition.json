@@ -271,7 +271,7 @@
                   "name": "CarouselItem",
                   "model": "carouselitem",
                   "card_title": "<h2>Sample Component Title</h2>",
-                  "card_text": "<p>Carousel item text goes here.</p>"
+                  "text": "<p>Carousel item text goes here.</p>"
                 }
               }
             }
