@@ -63,7 +63,7 @@ export default function decorate(block) {
     // carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
     imageContent.classList.add('img-class');
     cardContent.classList.add('card-content');
-    if (cardContent && cardContent.children) {
+    if (cardContent && cardContent.children.length) {
       let isFirst = true;
       cardContent.children.forEach((child) => {
         if (isFirst) {
@@ -72,7 +72,7 @@ export default function decorate(block) {
         } else {
           child.classList.add('card-text');
         }
-     }
+      });
     }
     carouselContainer.append(carouselItem);
   });
