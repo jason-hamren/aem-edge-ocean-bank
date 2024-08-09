@@ -67,10 +67,10 @@ export default function decorate(block) {
       let isFirst = true;
       cardContent.childNodes.forEach((child) => {
         if (isFirst) {
-          child.classList.add('card-title');
+          child.classList.add('content-title');
           isFirst = false;
         } else {
-          child.classList.add('card-text');
+          child.classList.add('content-text');
         }
       });
     }
