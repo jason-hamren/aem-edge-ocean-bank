@@ -57,11 +57,23 @@ export default function decorate(block) {
   const carouselContainer = document.createElement('div');
   carouselContainer.className = 'carousel-group';
   [...block.children].forEach((carouselItem) => {
+    carouselItem.classList.add('carousel-item');
     const [imageContent, cardContent] = carouselItem.children;
     // eslint-disable-next-line max-len
     // carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
     imageContent.classList.add('img-class');
     cardContent.classList.add('card-content');
+    if (cardContent && cardContent.children) {
+      let isFirst = true;
+      cardContent.children.forEach((child) => {
+        if (isFirst) {
+          child.classList.add('card-title');
+          isFirst = false;
+        } else {
+          child.classList.add('card-text');
+        }
+     }
+    }
     carouselContainer.append(carouselItem);
   });
   block.textContent = '';
