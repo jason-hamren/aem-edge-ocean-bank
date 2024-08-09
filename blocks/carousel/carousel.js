@@ -1,30 +1,3 @@
-/**
- * Wrap an array of items all at once
- */
-// function wrapAll(children, wrapper) {
-//   if (children && children.length) {
-//     children[0].parentNode.insertBefore(wrapper, children[0]);
-//     [...children].forEach((child) => {
-//       if (child === wrapper) return;
-//       wrapper.appendChild(child);
-//     });
-//   }
-// }
-
-// function createCarouselItem(imageContent, cardContent) {
-//   imageContent.classList.add('img-container');
-//   // const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
-//   // const cardTitle = cardContent && cardContent.querySelector('p').innerText;
-//   // const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
-//   return `
-//     <div class="carousel-item">
-//        ${imageContent}
-//        <div class="content-card">
-//           ${cardContent}
-//        </div>
-//     </div>`;
-// }
-
 function createActionContainer() {
   return `
     <div class="carousel-actions">
