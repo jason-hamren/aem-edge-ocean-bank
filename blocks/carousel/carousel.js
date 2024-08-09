@@ -65,7 +65,7 @@ export default function decorate(block) {
     cardContent.classList.add('card-content');
     if (cardContent && cardContent.children.length) {
       let isFirst = true;
-      cardContent.children.forEach((child) => {
+      cardContent.childNodes.forEach((child) => {
         if (isFirst) {
           child.classList.add('card-title');
           isFirst = false;
