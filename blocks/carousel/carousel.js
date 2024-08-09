@@ -32,8 +32,6 @@ export default function decorate(block) {
   [...block.children].forEach((carouselItem) => {
     carouselItem.classList.add('carousel-item');
     const [imageContent, cardContent] = carouselItem.children;
-    // eslint-disable-next-line max-len
-    // carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
     imageContent.classList.add('img-container');
     cardContent.classList.add('content-card');
     if (cardContent && cardContent.children.length) {
