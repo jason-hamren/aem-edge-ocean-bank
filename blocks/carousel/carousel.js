@@ -1,24 +1,3 @@
-function createCarouselItem(imageContent, cardContent) {
-  const imageSrc = imageContent && imageContent.querySelector('img').getAttribute('src');
-  const imgAlt = imageContent && imageContent.querySelector('img').getAttribute('alt');
-  const cardTitle = cardContent && cardContent.querySelector('p').innerText;
-  const cardText = cardContent && cardContent.querySelectorAll('p')[1]?.innerText;
-  return `
-    <div class="carousel-item">
-       <div class="img-container">
-          <picture>
-            <img src="${imageSrc || ''}" alt="${imgAlt || ''}">
-          </picture>
-       </div>
-       <div class="content-card">
-          <h2 class="content-title">${cardTitle || ''}</h2>
-          <div class="content-text">
-            <p>${cardText || ''}</p>
-          </div>
-       </div>
-    </div>`;
-}
-
 function createActionContainer() {
   return `
     <div class="carousel-actions">
@@ -51,9 +30,22 @@ export default function decorate(block) {
   const carouselContainer = document.createElement('div');
   carouselContainer.className = 'carousel-group';
   [...block.children].forEach((carouselItem) => {
+    carouselItem.classList.add('carousel-item');
     const [imageContent, cardContent] = carouselItem.children;
-    // eslint-disable-next-line max-len
-    carouselContainer.insertAdjacentHTML('beforeend', createCarouselItem(imageContent, cardContent));
+    imageContent.classList.add('img-container');
+    cardContent.classList.add('content-card');
+    if (cardContent && cardContent.children.length) {
+      let isFirst = true;
+      cardContent.childNodes.forEach((child) => {
+        if (isFirst) {
+          child.classList.add('content-title');
+          isFirst = false;
+        } else {
+          child.classList.add('content-text');
+        }
+      });
+    }
+    carouselContainer.append(carouselItem);
   });
   block.textContent = '';
   block.append(carouselContainer);

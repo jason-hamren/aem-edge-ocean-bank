@@ -47,7 +47,7 @@ main .carousel-wrapper {
             height: 36.667rem;
             width: 35.111rem;
 
-            .content-title {
+            .content-title h2 {
                 font-size: 2.111rem;
                 line-height: 2.111rem;
                 margin-bottom: 1.667rem;
